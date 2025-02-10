@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Tool, Monitor } from "lucide-react";
+import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Wrench, Monitor } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -103,7 +103,7 @@ const Index = () => {
             {/* Software Skills */}
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <Tool className="w-6 h-6 text-white mr-2" />
+                <Wrench className="w-6 h-6 text-white mr-2" />
                 <h3 className="text-xl font-semibold text-white">Logiciels</h3>
               </div>
               <div className="flex flex-wrap gap-2">
