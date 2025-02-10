@@ -6,7 +6,7 @@ const Index = () => {
   const skills = {
     development: ["C#", "PHP", "HTML", "CSS", "Python", "SQL"],
     network: ["Adressage", "Configuration interconnexion"],
-    services: ["HD", "DNS", "DHCP", "FTP", "WEB (Apache, PHP, MariaDB)"],
+    services: ["DNS", "DHCP", "FTP", "WEB (Apache, PHP, MariaDB)"],
     os: ["Windows 10", "Linux (Kali Linux)", "Windows Server"],
     software: ["Packet Tracer", "Wireshark", "Visio"],
     virtualization: ["Nutanix", "VirtualBox"],
