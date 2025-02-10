@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Server, Code, Network } from "lucide-react";
+import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Tool, Monitor } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -44,16 +44,11 @@ const Index = () => {
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Code className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">
-                  Développement
-                </h3>
+                <h3 className="text-xl font-semibold text-white">Développement</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.development.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300"
-                  >
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
                     {skill}
                   </span>
                 ))}
@@ -68,10 +63,7 @@ const Index = () => {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.network.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300"
-                  >
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
                     {skill}
                   </span>
                 ))}
@@ -86,10 +78,63 @@ const Index = () => {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.services.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300"
-                  >
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* OS Skills */}
+            <div className="glass p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <Monitor className="w-6 h-6 text-white mr-2" />
+                <h3 className="text-xl font-semibold text-white">Systèmes d'exploitation</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.os.map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Software Skills */}
+            <div className="glass p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <Tool className="w-6 h-6 text-white mr-2" />
+                <h3 className="text-xl font-semibold text-white">Logiciels</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.software.map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Virtualization, Deployment, Scripting Skills */}
+            <div className="glass p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <Box className="w-6 h-6 text-white mr-2" />
+                <h3 className="text-xl font-semibold text-white">Virtualisation & Déploiement</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[...skills.virtualization, ...skills.deployment].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-4 flex items-center">
+                <Terminal className="w-6 h-6 text-white mr-2" />
+                <h4 className="text-lg font-semibold text-white">Scripting</h4>
+              </div>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {skills.scripting.map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
                     {skill}
                   </span>
                 ))}
@@ -104,15 +149,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center space-x-6">
             <a
-              href="#"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/in/noah-f-b3a500265/"
               className="text-gray-400 hover:text-white transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,7 +157,7 @@ const Index = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:n.froment37@gmail.com"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Mail className="w-6 h-6" />
