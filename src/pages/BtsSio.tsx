@@ -1,5 +1,5 @@
 
-import { BookOpen, Server, Code, Network, Database, Layout, Mail } from "lucide-react";
+import { BookOpen, Server, Code, Network, Database, Layout, Mail, Github, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const BtsSio = () => {
@@ -119,7 +119,7 @@ const BtsSio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BookOpen className="w-6 h-6" />
+              <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:n.froment37@gmail.com"
