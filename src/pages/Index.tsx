@@ -115,7 +115,7 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Virtualization & Deployment */}
+            {/* Virtualization */}
             <div className="glass p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Box className="w-6 h-6 text-white mr-2" />
@@ -128,11 +128,15 @@ const Index = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 flex items-center">
+            </div>
+
+            {/* Deployment */}
+            <div className="glass p-6 rounded-lg">
+              <div className="flex items-center mb-4">
                 <Box className="w-6 h-6 text-white mr-2" />
-                <h4 className="text-lg font-semibold text-white">7 - Déploiement</h4>
+                <h3 className="text-xl font-semibold text-white">7 - Déploiement de postes</h3>
               </div>
-              <div className="mt-2 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 {skills.deployment.map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
                     {skill}
