@@ -1,5 +1,5 @@
 
-import { BookOpen, Server, Code, Network, Database, Layout } from "lucide-react";
+import { BookOpen, Server, Code, Network, Database, Layout, Mail } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const BtsSio = () => {
