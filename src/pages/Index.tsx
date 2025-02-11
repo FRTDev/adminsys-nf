@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Wrench, Monitor } from "lucide-react";
+import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Wrench, Monitor, User } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -23,11 +23,33 @@ const Index = () => {
       <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8 animate-fadeIn">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
+            <div className="mb-8 flex justify-center">
+              <div className="w-24 h-24 rounded-full glass flex items-center justify-center">
+                <Code className="w-12 h-12 text-white" />
+              </div>
+            </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Portfolio
+              Noah F.
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Étudiant en BTS SIO passionné par le développement et les réseaux
+              Étudiant en BTS SIO SISR
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Presentation Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="glass p-8 rounded-lg">
+            <div className="flex items-center mb-6">
+              <User className="w-6 h-6 text-white mr-3" />
+              <h2 className="text-2xl font-bold text-white">À propos de moi</h2>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              Actuellement en deuxième année de BTS SIO avec une spécialisation en SISR (Solutions d'Infrastructure, Systèmes et Réseaux), 
+              je suis passionné par l'administration système et réseau. Mon parcours m'a permis de développer des compétences solides 
+              en gestion d'infrastructure IT et en sécurité des systèmes d'information.
             </p>
           </div>
         </div>
