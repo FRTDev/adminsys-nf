@@ -5,14 +5,14 @@ import Navigation from "@/components/Navigation";
 const Index = () => {
   const skills = {
     development: ["C#", "PHP", "HTML", "CSS", "Python", "SQL"],
-    network: ["Adressage", "Configuration interconnexion"],
-    services: ["DNS", "DHCP", "FTP", "WEB (Apache, PHP, MariaDB)"],
-    os: ["Windows 10", "Linux (Kali Linux)", "Windows Server"],
-    software: ["Packet Tracer", "Wireshark", "Visio"],
-    virtualization: ["Nutanix", "VirtualBox"],
+    network: ["Adressage", "Configuration et Sécurisation des équipements", "VLAN", "Protocoles de routage"],
+    services: ["DNS", "DHCP", "FTP", "WEB (Apache, PHP, MariaDB)", "AD", "LDAP"],
+    os: ["Windows 10/11", "Linux Debian/Kali Linux", "Windows Server 2019/2022"],
+    software: ["Packet Tracer", "Wireshark", "Nmap", "Metasploit"],
+    virtualization: ["Nutanix", "VirtualBox", "Hyper-V", "Docker", "VMware"],
     deployment: ["FOG"],
-    scripting: ["Batch", "Bash"],
-    management: ["GLPI", "Fusion Inventory"],
+    scripting: ["Batch", "Bash", "PowerShell", "Python"],
+    management: ["GLPI", "Zabbix", "Centreon"],
   };
 
   return (
