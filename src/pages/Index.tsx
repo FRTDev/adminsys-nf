@@ -5,14 +5,14 @@ import Navigation from "@/components/Navigation";
 const Index = () => {
   const skills = {
     development: ["C#", "PHP", "HTML", "CSS", "Python", "SQL"],
-    network: ["Adressage", "Configuration interconnexion"],
-    services: ["DNS", "DHCP", "FTP", "WEB (Apache, PHP, MariaDB)"],
-    os: ["Windows 10", "Linux (Kali Linux)", "Windows Server"],
-    software: ["Packet Tracer", "Wireshark", "Visio"],
-    virtualization: ["Nutanix", "VirtualBox"],
-    deployment: ["FOG"],
-    scripting: ["Batch", "Bash"],
-    management: ["GLPI", "Fusion Inventory"],
+    network: ["Adressage", "Configuration d'interconnexion", "Sécurisation des équipements", "VLAN", "Protocoles de routage"],
+    services: ["DNS", "DHCP", "FTP", "Apache", "PHP", "MariaDB", "SSH", "AD", "LDAP"],
+    os: ["Windows 10/11", "Linux Debian/Kali Linux", "Windows Server 2019/2022"],
+    software: ["Packet Tracer", "Wireshark", "Nmap", "Metasploit"],
+    virtualization: ["Nutanix", "VirtualBox", "Hyper-V", "Docker", "VMware"],
+    deployment: ["FOG", "Sysprep", "Windows ADK"],
+    scripting: ["Batch", "Bash", "PowerShell", "Python"],
+    management: ["GLPI", "Zabbix", "Centreon"],
   };
 
   return (
@@ -62,140 +62,39 @@ const Index = () => {
             Compétences
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Development Skills */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Code className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">1 - Développement</h3>
+            {Object.entries(skills).map(([category, skillList], index) => (
+              <div key={category} className="glass p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  {category === "development" && <Code className="w-6 h-6 text-white mr-2" />}
+                  {category === "network" && <Network className="w-6 h-6 text-white mr-2" />}
+                  {category === "services" && <Server className="w-6 h-6 text-white mr-2" />}
+                  {category === "os" && <Monitor className="w-6 h-6 text-white mr-2" />}
+                  {category === "software" && <Wrench className="w-6 h-6 text-white mr-2" />}
+                  {category === "virtualization" && <Box className="w-6 h-6 text-white mr-2" />}
+                  {category === "deployment" && <Box className="w-6 h-6 text-white mr-2" />}
+                  {category === "scripting" && <Terminal className="w-6 h-6 text-white mr-2" />}
+                  {category === "management" && <Wrench className="w-6 h-6 text-white mr-2" />}
+                  <h3 className="text-xl font-semibold text-white">
+                    {index + 1} - {category === "os" && "Systèmes d'exploitation"}
+                    {category === "development" && "Développement"}
+                    {category === "network" && "Réseau"}
+                    {category === "services" && "Services"}
+                    {category === "software" && "Logiciels"}
+                    {category === "virtualization" && "Virtualisation"}
+                    {category === "deployment" && "Déploiement de postes"}
+                    {category === "scripting" && "Scripting"}
+                    {category === "management" && "Gestion de parc et incidents"}
+                  </h3>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {skillList.map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.development.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Network Skills */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Network className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">2 - Réseau</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.network.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Services Skills */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Server className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">3 - Services</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.services.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* OS Skills */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Monitor className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">4 - Systèmes d'exploitation</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.os.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Software Skills */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Wrench className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">5 - Logiciels</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.software.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Virtualization */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Box className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">6 - Virtualisation</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.virtualization.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Deployment */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Box className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">7 - Déploiement de postes</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.deployment.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Scripting */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Terminal className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">8 - Scripting</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.scripting.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Management */}
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <Wrench className="w-6 h-6 text-white mr-2" />
-                <h3 className="text-xl font-semibold text-white">9 - Gestion de parc et incidents</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.management.map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-white/10 rounded-full text-sm text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
