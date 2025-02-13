@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import BtsSio from "./pages/BtsSio";
 import Veille from "./pages/Veille";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,7 +23,7 @@ const App = () => (
           <Route path="/bts-sio" element={<BtsSio />} />
           <Route path="/projets" element={<NotFound />} />
           <Route path="/veille" element={<Veille />} />
-          <Route path="/contact" element={<NotFound />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
