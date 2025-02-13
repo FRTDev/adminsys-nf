@@ -1,3 +1,4 @@
+
 import { Shield, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
@@ -52,7 +53,7 @@ const Veille = () => {
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe 
                       className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/videoseries?list=UUuQ7LpRaX_wR8gHGOiYrrbg"
+                      src="https://www.youtube.com/embed/?listType=user_uploads&list=Cookieconnecté"
                       title="Cookie connecté - Dernières vidéos"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -66,7 +67,7 @@ const Veille = () => {
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe 
                       className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/videoseries?list=UUqJt_FS8U_iZqJN-g_dPgBA"
+                      src="https://www.youtube.com/embed/?listType=user_uploads&list=BlueTeamFrance"
                       title="Blue Team France - Dernières vidéos"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -76,11 +77,11 @@ const Veille = () => {
 
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Micode</h3>
-                  <p className="text-gray-300 mb-4">Michaël de Marliave aka Micode vulgarise l'informatique en créant des scneraii ultra orignaux.</p>
+                  <p className="text-gray-300">Michaël de Marliave aka Micode vulgarise l'informatique en créant des scneraii ultra orignaux.</p>
                   <div className="aspect-w-16 aspect-h-9">
                     <iframe 
                       className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/videoseries?list=UUHww_q21q2eGeyH3lnR10cw"
+                      src="https://www.youtube.com/embed/?listType=user_uploads&list=Micode"
                       title="Micode - Dernières vidéos"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -152,13 +153,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     OZINT
-                    <a href="https://www.ozint.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://ozint.eu/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Plateforme dédiée à l'OSINT très bien designée par l'équipe d'un intervenant d'Oteria</p>
                   <iframe 
-                    src="https://www.ozint.fr" 
+                    src="https://ozint.eu" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="OZINT"
                   ></iframe>
@@ -167,13 +168,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     THE OSINT PROJECT
-                    <a href="https://www.theosintproject.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://the-osint-project.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">The Osint Project c'est une plateforme de challenges qui te font découvrir le web autrement !</p>
                   <iframe 
-                    src="https://www.theosintproject.com" 
+                    src="https://the-osint-project.fr" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="THE OSINT PROJECT"
                   ></iframe>
@@ -182,13 +183,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     JEDHA
-                    <a href="https://www.jedha.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.jedha.co/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">L'école spécialisée dans la reconversion en cybersécurité, propose des dizaines d'heures de cours pour débutants en cybersécurité, et cela gratuitement, sur sa plateforme d'apprentissage JULIE.</p>
                   <iframe 
-                    src="https://www.jedha.fr" 
+                    src="https://www.jedha.co" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="JEDHA"
                   ></iframe>
@@ -203,13 +204,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     Café Cyber
-                    <a href="https://cafecyber.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.cafe-cyber.oteria.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Le blog des études et des métiers de la cybersécurité.</p>
                   <iframe 
-                    src="https://cafecyber.fr" 
+                    src="https://www.cafe-cyber.oteria.fr" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="Café Cyber"
                   ></iframe>
@@ -218,13 +219,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     Zataz
-                    <a href="https://zataz.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.zataz.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Plateforme créée et animée par le célèbre Damien Bancal et tenant les usagers au courant des dernières technologies, attaques informatiques...</p>
                   <iframe 
-                    src="https://zataz.fr" 
+                    src="https://www.zataz.com" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="Zataz"
                   ></iframe>
@@ -248,13 +249,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     Blog Crowstrike
-                    <a href="https://blog.crowdstrike.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.crowdstrike.com/en-us/blog/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Blog de la start-up Crowdstrike donnant un angle différent à l'actualité de la cybersécurité</p>
                   <iframe 
-                    src="https://blog.crowdstrike.com" 
+                    src="https://www.crowdstrike.com/en-us/blog/" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="Blog Crowstrike"
                   ></iframe>
@@ -278,13 +279,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     Cyber Marétique
-                    <a href="https://cybermarquete.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://cybermaretique.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Toute l'actualité de la cybersécurité maritime est présente sur ce site</p>
                   <iframe 
-                    src="https://cybermarquete.fr" 
+                    src="https://cybermaretique.fr" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="Cyber Marétique"
                   ></iframe>
@@ -293,13 +294,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     ZDNet
-                    <a href="https://www.zdnet.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.zdnet.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Site donnant une vision assez large sur les dernières actualités tech et innovation</p>
                   <iframe 
-                    src="https://www.zdnet.fr" 
+                    src="https://www.zdnet.com" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="ZDNet"
                   ></iframe>
@@ -308,13 +309,13 @@ const Veille = () => {
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
                     Le blog de Vaadata
-                    <a href="https://vaadata.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
+                    <a href="https://www.vaadata.com/blog/fr" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Vaadata est une société spécialisée en pentest. Elle publie des articles sur la sécurité : les défis techniques et enjeux de société.</p>
                   <iframe 
-                    src="https://vaadata.fr" 
+                    src="https://www.vaadata.com/blog/fr" 
                     className="w-full h-64 rounded-lg border border-gray-700"
                     title="Le blog de Vaadata"
                   ></iframe>
