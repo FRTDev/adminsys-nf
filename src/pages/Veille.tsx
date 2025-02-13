@@ -1,5 +1,5 @@
 
-import { Shield, ExternalLink } from "lucide-react";
+import { Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Veille = () => {
@@ -46,69 +46,39 @@ const Veille = () => {
             {/* YouTube Channels */}
             <div>
               <h2 className="text-2xl font-bold text-white mb-4">👾 Chaines Youtube à suivre</h2>
-              <div className="space-y-8">
+              <div className="space-y-4">
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Cookie connecté</h3>
-                  <p className="text-gray-300 mb-4">Expliquer un sujet complexe de l'informatique en moins de 10 minutes, c'est possible. Le cloud, l'infrastructure et les nouvelles tendances IT...</p>
-                  <div className="aspect-w-16 aspect-h-9">
-                    <iframe 
-                      className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/?listType=user_uploads&list=Cookieconnecté"
-                      title="Cookie connecté - Dernières vidéos"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
+                  <p className="text-gray-300">Expliquer un sujet complexe de l'informatique en moins de 10 minutes, c'est possible. Le cloud, l'infrastructure et les nouvelles tendances IT...</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Blue Team France</h3>
-                  <p className="text-gray-300 mb-4">Mathieu Pichon publie différentes vidéos sur la cybersécurité et ses concepts, les ateliers et le mindset cyber.</p>
-                  <div className="aspect-w-16 aspect-h-9">
-                    <iframe 
-                      className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/?listType=user_uploads&list=BlueTeamFrance"
-                      title="Blue Team France - Dernières vidéos"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
+                  <p className="text-gray-300">Mathieu Pichon publie différentes vidéos sur la cybersécurité et ses concepts, les ateliers et le mindset cyber.</p>
                 </div>
-
+                <div className="glass p-4 rounded-lg">
+                  <h3 className="text-lg font-semibold text-white">Le cybermentor</h3>
+                  <p className="text-gray-300">Il propose des cours assez complets et du contenu sur différents produits et outils Web, tests d'intrusion d'applications Web,...</p>
+                </div>
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Micode</h3>
-                  <p className="text-gray-300">Michaël de Marliave aka Micode vulgarise l'informatique en créant des scneraii ultra orignaux.</p>
-                  <div className="aspect-w-16 aspect-h-9">
-                    <iframe 
-                      className="w-full rounded-lg"
-                      src="https://www.youtube.com/embed/?listType=user_uploads&list=Micode"
-                      title="Micode - Dernières vidéos"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
+                  <p className="text-gray-300">Michaël de Marliave aka Micode vulgarise l'informatique en créant des scneraii ultra orignaux. Il se concentre sur la programmation et le développement informatique</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Underscore</h3>
                   <p className="text-gray-300">Micode a lancé le talk-show des passionnés de l'IT. À retrouver 1 mercredi sur 2 à 19h sur Twitch.</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Pour1nfo</h3>
                   <p className="text-gray-300">Peut-être la chaîne la plus accessible pour le grand public, il s'intéresse aux nouvelles liées aux données et systèmes d'informations et les décrypte</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">IppSec</h3>
                   <p className="text-gray-300">Chaîne centrée autour des challenges CTF et des machines HackTheBox</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">Hafnium</h3>
                   <p className="text-gray-300">Hafnium aborde plusieurs sujets, sécurité informatique, admin sys, dev sécurisé,..</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white">John Hammond</h3>
                   <p className="text-gray-300">Il couvre un éventail de sujets très larges: : analyse des logiciels malveillants, le dark web, programmation, carrières en cybersécurité, salles TryHackMe</p>
@@ -121,78 +91,24 @@ const Veille = () => {
               <h2 className="text-2xl font-bold text-white mb-4">📖 Plateformes d'apprentissage dédiée au Hacking éthique</h2>
               <div className="space-y-4">
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Root-Me
-                    <a href="https://www.root-me.org/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Root-Me est la plateforme la plus connue des recruteurs et des passionnées de sécurité</p>
-                  <iframe 
-                    src="https://www.root-me.org" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Root-Me"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Root-Me</h3>
+                  <p className="text-gray-300">Root-Me est la plateforme la plus connue des recruteurs et des passionnées de sécurité</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    HackTheBox
-                    <a href="https://www.hackthebox.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Plateforme de hacking éthique gamifiée très accessible au départ et proposant des Meet-up réguliers</p>
-                  <iframe 
-                    src="https://www.hackthebox.com" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="HackTheBox"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">HackTheBox</h3>
+                  <p className="text-gray-300">Plateforme de hacking éthique gamifiée très accessible au départ et proposant des Meet-up réguliers</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    OZINT
-                    <a href="https://ozint.eu/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Plateforme dédiée à l'OSINT très bien designée par l'équipe d'un intervenant d'Oteria</p>
-                  <iframe 
-                    src="https://ozint.eu" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="OZINT"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">OZINT</h3>
+                  <p className="text-gray-300">Plateforme dédiée à l'OSINT très bien designée par l'équipe d'un intervenant d'Oteria</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    THE OSINT PROJECT
-                    <a href="https://the-osint-project.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">The Osint Project c'est une plateforme de challenges qui te font découvrir le web autrement !</p>
-                  <iframe 
-                    src="https://the-osint-project.fr" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="THE OSINT PROJECT"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">THE OSINT PROJECT</h3>
+                  <p className="text-gray-300">The Osint Project c'est une plateforme de challenges qui te font découvrir le web autrement !</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    JEDHA
-                    <a href="https://www.jedha.co/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">L'école spécialisée dans la reconversion en cybersécurité, propose des dizaines d'heures de cours pour débutants en cybersécurité, et cela gratuitement, sur sa plateforme d'apprentissage JULIE.</p>
-                  <iframe 
-                    src="https://www.jedha.co" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="JEDHA"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">JEDHA</h3>
+                  <p className="text-gray-300">L'école spécialisée dans la reconversion en cybersécurité, propose des dizaines d'heures de cours pour débutants en cybersécurité, et cela gratuitement, sur sa plateforme d'apprentissage JULIE.</p>
                 </div>
               </div>
             </div>
@@ -202,123 +118,36 @@ const Veille = () => {
               <h2 className="text-2xl font-bold text-white mb-4">🔍 Site et veille cyber</h2>
               <div className="space-y-4">
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Café Cyber
-                    <a href="https://www.cafe-cyber.oteria.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Le blog des études et des métiers de la cybersécurité.</p>
-                  <iframe 
-                    src="https://www.cafe-cyber.oteria.fr" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Café Cyber"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Café Cyber</h3>
+                  <p className="text-gray-300">Le blog des études et des métiers de la cybersécurité.</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Zataz
-                    <a href="https://www.zataz.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Plateforme créée et animée par le célèbre Damien Bancal et tenant les usagers au courant des dernières technologies, attaques informatiques...</p>
-                  <iframe 
-                    src="https://www.zataz.com" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Zataz"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Zataz</h3>
+                  <p className="text-gray-300">Plateforme créée et animée par le célèbre Damien Bancal et tenant les usagers au courant des dernières technologies, attaques informatiques...</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    TheHackerNews
-                    <a href="https://thehackernews.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">L'un des sites les plus consultés dans le monde par les professionnels de la sécurité IT</p>
-                  <iframe 
-                    src="https://thehackernews.com" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="TheHackerNews"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">TheHackerNews</h3>
+                  <p className="text-gray-300">L'un des sites les plus consultés dans le monde par les professionnels de la sécurité IT</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Blog Crowstrike
-                    <a href="https://www.crowdstrike.com/en-us/blog/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Blog de la start-up Crowdstrike donnant un angle différent à l'actualité de la cybersécurité</p>
-                  <iframe 
-                    src="https://www.crowdstrike.com/en-us/blog/" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Blog Crowstrike"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Blog Crowstrike</h3>
+                  <p className="text-gray-300">Blog de la start-up Crowdstrike donnant un angle différent à l'actualité de la cybersécurité</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    CERT-FR
-                    <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Le Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques</p>
-                  <iframe 
-                    src="https://www.cert.ssi.gouv.fr" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="CERT-FR"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">CERT-FR</h3>
+                  <p className="text-gray-300">Le Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques est un organisme français qui participe à la mission d'autorité nationale de l'ANSSI</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Cyber Marétique
-                    <a href="https://cybermaretique.fr/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Toute l'actualité de la cybersécurité maritime est présente sur ce site</p>
-                  <iframe 
-                    src="https://cybermaretique.fr" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Cyber Marétique"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Cyber Marétique</h3>
+                  <p className="text-gray-300">Toute l'actualité de la cybersécurité maritime est présente sur ce site</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    ZDNet
-                    <a href="https://www.zdnet.com/" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Site donnant une vision assez large sur les dernières actualités tech et innovation</p>
-                  <iframe 
-                    src="https://www.zdnet.com" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="ZDNet"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">ZDNet</h3>
+                  <p className="text-gray-300">Site donnant une vision assez large sur les dernières actualités tech et innovation</p>
                 </div>
-
                 <div className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white flex items-center">
-                    Le blog de Vaadata
-                    <a href="https://www.vaadata.com/blog/fr" target="_blank" rel="noopener noreferrer" className="ml-2 text-gray-400 hover:text-white">
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-300 mb-4">Vaadata est une société spécialisée en pentest. Elle publie des articles sur la sécurité : les défis techniques et enjeux de société.</p>
-                  <iframe 
-                    src="https://www.vaadata.com/blog/fr" 
-                    className="w-full h-64 rounded-lg border border-gray-700"
-                    title="Le blog de Vaadata"
-                  ></iframe>
+                  <h3 className="text-lg font-semibold text-white">Le blog de Vaadata</h3>
+                  <p className="text-gray-300">Vaadata est une société spécialisée en pentest. Elle publie des articles sur la sécurité : les défis techniques et enjeux de société.</p>
                 </div>
               </div>
             </div>
