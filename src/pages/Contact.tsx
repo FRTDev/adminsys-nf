@@ -47,7 +47,7 @@ const Contact = () => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    const mailtoLink = `mailto:noahf.dev@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:n.froment37@gmail.com?subject=${encodeURIComponent(
       values.subject
     )}&body=${encodeURIComponent(
       `De: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
@@ -167,11 +167,11 @@ const Contact = () => {
             <p className="text-gray-400">
               Vous pouvez également me contacter directement par email à{" "}
               <a
-                href="mailto:noahf.dev@gmail.com"
+                href="mailto:n.froment37@gmail.com"
                 className="text-white hover:text-primary transition-colors flex items-center justify-center gap-2 mt-2"
               >
                 <Mail className="w-4 h-4" />
-                noahf.dev@gmail.com
+                n.froment37@gmail.com
               </a>
             </p>
           </div>
