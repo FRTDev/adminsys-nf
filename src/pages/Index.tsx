@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, Server, Code, Network, Box, Terminal, Wrench, Monitor, User, GraduationCap, Briefcase, Award } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
@@ -68,7 +67,7 @@ const Index = () => {
     {
       title: "Stage - Armatis",
       period: "Mai 2024 - Juin 2024",
-      description: "Stage de première année BTS - Relation client (5 semaines)"
+      description: "Stage de première année BTS (5 semaines)"
     }
   ];
 
@@ -199,45 +198,56 @@ const Index = () => {
               <GraduationCap className="w-6 h-6 text-white mr-3" />
               <h2 className="text-2xl font-bold text-white">Parcours</h2>
             </div>
-            <div className="space-y-8">
-              {/* Formation */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white mb-4">Formation</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {education.map((edu, index) => (
-                    <div key={index} className="glass p-4 rounded-lg">
-                      <h4 className="text-lg font-semibold text-white">{edu.title}</h4>
-                      <p className="text-sm text-gray-400">{edu.institution} | {edu.period}</p>
-                      <p className="text-gray-300 mt-2">{edu.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            
+            <div className="relative space-y-8">
+              {/* Timeline line */}
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-white/20" />
 
-              {/* Professional Experience */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-white mb-4">Expérience professionnelle</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {professionalExperience.map((exp, index) => (
-                    <div key={index} className="glass p-4 rounded-lg">
-                      <h4 className="text-lg font-semibold text-white">{exp.title}</h4>
-                      <p className="text-sm text-gray-400">{exp.period}</p>
-                      <p className="text-gray-300 mt-2">{exp.description}</p>
-                    </div>
-                  ))}
+              {/* Timeline items - Formation */}
+              {education.map((edu, index) => (
+                <div key={index} className="relative ml-16 animate-fadeIn" style={{ animationDelay: `${index * 100}ms` }}>
+                  {/* Timeline dot */}
+                  <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40" />
+                  {/* Timeline content */}
+                  <div className="glass p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white flex items-center gap-2">
+                      <GraduationCap className="w-4 h-4" />
+                      {edu.title}
+                    </h4>
+                    <p className="text-sm text-gray-400">{edu.institution} | {edu.period}</p>
+                    <p className="text-gray-300 mt-2">{edu.description}</p>
+                  </div>
                 </div>
-                <p className="text-gray-400 mt-4 text-center">
-                  Pour voir tous mes jobs étudiants, consultez mon profil{" "}
-                  <a
-                    href="https://www.linkedin.com/in/noah-f-b3a500265/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:underline"
-                  >
-                    LinkedIn
-                  </a>
-                </p>
-              </div>
+              ))}
+
+              {/* Timeline items - Professional Experience */}
+              {professionalExperience.map((exp, index) => (
+                <div key={index} className="relative ml-16 animate-fadeIn" style={{ animationDelay: `${(education.length + index) * 100}ms` }}>
+                  {/* Timeline dot */}
+                  <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40" />
+                  {/* Timeline content */}
+                  <div className="glass p-4 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white flex items-center gap-2">
+                      <Briefcase className="w-4 h-4" />
+                      {exp.title}
+                    </h4>
+                    <p className="text-sm text-gray-400">{exp.period}</p>
+                    <p className="text-gray-300 mt-2">{exp.description}</p>
+                  </div>
+                </div>
+              ))}
+
+              <p className="text-gray-400 mt-8 text-center relative z-10">
+                Pour voir tous mes jobs étudiants, consultez mon profil{" "}
+                <a
+                  href="https://www.linkedin.com/in/noah-f-b3a500265/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
+                  LinkedIn
+                </a>
+              </p>
             </div>
           </div>
         </div>
