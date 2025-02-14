@@ -1,4 +1,3 @@
-
 import { Shield, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
@@ -20,7 +19,7 @@ const Veille = () => {
               Guide complet de la veille en cybersécurité
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Toutes les ressources pour suivre l'actualité cyber : chaînes Youtube, plateformes d'apprentissage et sites web
+              Toutes les ressources pour suivre l'actualité cyber : chaînes YouTube, plateformes d'apprentissage et sites web
             </p>
             <p className="text-gray-500 mt-4">
               Par Noah F. - 21/02/2025
@@ -36,16 +35,16 @@ const Veille = () => {
             <div>
               <h2 className="text-2xl font-bold text-white mb-4">Et pourquoi ?</h2>
               <p className="text-gray-300 leading-relaxed">
-                La veille en cybersécurité est cruciale pour toute entreprise. Elle consiste à surveiller constamment les menaces potentielles qui pèsent sur les systèmes d'information d'une entreprise. Cette démarche vise à collecter, analyser et partager des informations pertinentes sur les vulnérabilités, les intrusions et les risques liés à la sécurité informatique. L'ANSSI, Agence nationale de la sécurité des systèmes d'information en France, propose d'ailleurs un service de veille en cybersécurité pour aider les entreprises françaises à se protéger efficacement - le CERT-FR.
+                La veille en cybersécurité est essentielle pour toute entreprise. Elle consiste à surveiller constamment les menaces potentielles qui pèsent sur les systèmes d'information. Cette démarche vise à collecter, analyser et partager des informations pertinentes sur les vulnérabilités, les intrusions et les risques liés à la sécurité informatique. L'ANSSI, Agence nationale de la sécurité des systèmes d'information en France, propose d'ailleurs un service de veille en cybersécurité pour aider les entreprises françaises à se protéger efficacement - le CERT-FR.
               </p>
               <p className="text-gray-300 leading-relaxed mt-4">
-                Pour cela, il est essentiel de connaître les sources d'informations fiables, de mettre en place des outils et des techniques spécialisés, et d'adapter sa veille en fonction du domaine d'activité de l'entreprise. La collecte d'informations peut se faire à partir de sources variées, telles que les réseaux sociaux, LinkedIn, Google, et même des rapports de sécurité de la CNIL. Une veille efficace permet d'identifier les menaces en temps réel, de répondre rapidement aux incidents et de protéger l'entreprise.
+                Pour réaliser une veille efficace, il est essentiel de s'appuyer sur des sources d'informations fiables, d'utiliser des outils spécialisés et d'adapter sa stratégie en fonction du domaine d'activité de l'entreprise. La collecte d'informations peut provenir de diverses sources : réseaux sociaux professionnels, moteurs de recherche spécialisés et rapports officiels d'organismes comme la CNIL. Une veille bien structurée permet d'anticiper les menaces, de réagir rapidement aux incidents et de renforcer la protection de l'entreprise.
               </p>
             </div>
 
             {/* YouTube Channels */}
             <div>
-              <h2 className="text-2xl font-bold text-white mb-4">👾 Chaines Youtube à suivre</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">👾 Chaînes YouTube à suivre</h2>
               <div className="space-y-8">
                 <div className="glass p-4 rounded-lg">
                   <h3 className="text-lg font-semibold text-white flex items-center">
@@ -54,10 +53,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Expliquer un sujet complexe de l'informatique en moins de 10 minutes, c'est possible. Le cloud, l'infrastructure et les nouvelles tendances IT...</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Chaîne spécialisée dans la vulgarisation des concepts complexes de l'informatique en moins de 10 minutes. Des explications claires sur le cloud computing, l'infrastructure IT et les dernières innovations technologiques.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/qzWdzAvfBoo"
                       title="Cookie connecté - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,10 +72,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Il propose des cours assez complets et du contenu sur différents produits et outils Web, tests d'intrusion d'applications Web,...</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Une référence incontournable pour la formation en cybersécurité. La chaîne propose des cours approfondis sur les tests d'intrusion, la sécurité des applications web et les méthodologies de pentest professionnelles.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/FthE3WhMUuw"
                       title="TCM Security Academy - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -92,10 +91,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Michaël de Marliave aka Micode vulgarise l'informatique en créant des scneraii ultra orignaux.</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Michaël de Marliave, alias Micode, transforme des sujets techniques complexes en contenus captivants grâce à des scénarios créatifs et une approche narrative unique. Ses vidéos mêlent pédagogie et divertissement.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/gXtp6C-3JKo"
                       title="Micode - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -111,10 +110,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Micode a lancé le talk-show des passionnés de l'IT. À retrouver 1 mercredi sur 2 à 19h sur Twitch.</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Talk-show bimensuel créé par Micode, réunissant des experts et passionnés du monde IT. Diffusé en direct sur Twitch un mercredi sur deux à 19h, il propose des discussions approfondies sur les enjeux technologiques actuels.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/a1JoQssKoPg"
                       title="Underscore - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -130,10 +129,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Chaîne centrée autour des challenges CTF et des machines HackTheBox</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Référence incontournable pour les amateurs de CTF et de HackTheBox. IppSec propose des walkthroughs détaillés et pédagogiques, expliquant chaque étape de la résolution des challenges de sécurité.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/WakZS2BhVfs"
                       title="IppSec - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -149,10 +148,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Hafnium aborde plusieurs sujets, sécurité informatique, admin sys, dev sécurisé,..</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Chaîne française polyvalente couvrant un large spectre de la sécurité informatique : administration système, développement sécurisé, et bonnes pratiques en cybersécurité. Les contenus sont accessibles et pertinents pour tous les niveaux.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/OYXkDhja-Kw"
                       title="Hafnium - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -168,10 +167,10 @@ const Veille = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </h3>
-                  <p className="text-gray-300 mb-4">Il couvre un éventail de sujets très larges: : analyse des logiciels malveillants, le dark web, programmation, carrières en cybersécurité, salles TryHackMe</p>
-                  <div className="aspect-w-16 aspect-h-9">
+                  <p className="text-gray-300 mb-4">Expert reconnu proposant des contenus variés et approfondis sur la cybersécurité : analyse de malwares, exploration du dark web, programmation sécurisée et résolution de challenges TryHackMe. Ses tutoriels sont particulièrement appréciés des débutants.</p>
+                  <div className="aspect-video w-full h-auto">
                     <iframe 
-                      className="w-full rounded-lg"
+                      className="w-full h-full rounded-lg"
                       src="https://www.youtube.com/embed/Y93E37o5geE"
                       title="John Hammond - Dernière vidéo"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -278,7 +277,7 @@ const Veille = () => {
                   <img 
                     src="https://cdn.prod.website-files.com/631af61fe0ed5ef2ac053726/632f1285e846c05180df5387_open-graph-oteria-cyber-school.svg" 
                     alt="Café Cyber"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -293,7 +292,7 @@ const Veille = () => {
                   <img 
                     src="https://www.zataz.com/wp-content/uploads/Noir-et-Blanc-Encadre-Future-DJ-Logo.png" 
                     alt="Zataz"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -308,7 +307,7 @@ const Veille = () => {
                   <img 
                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucioIaLjDLMVbAzsIDpaYM754ZmWwLu6oPFfZ95bcJQK9paBjdrkpQnnjTExUWJbExlV10x25riYersOaWF_TFGCFvlw52qXMvrNMGacAb6nkP1RBTMGL1yWdvoajXbj5qf4U9O_sH6tH-BxNpOveZnxMT6bVDX57FaKB1jFlbPExVQgmA4HKKuROJA/s1700/THN.jpg" 
                     alt="TheHackerNews"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -321,9 +320,9 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">Blog de la start-up Crowdstrike donnant un angle différent à l'actualité de la cybersécurité</p>
                   <img 
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJntJ0VK_O0-AiFt4sDXuJxFQz_sBazQeG-w&s" 
+                    src="https://www.ignition-technology.com/ne/wp-content/uploads/sites/17/2024/02/News-Thumbnails-Crowdstrike-1200x1200.jpg" 
                     alt="Blog Crowstrike"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -336,9 +335,9 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">Le Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques</p>
                   <img 
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Jd9jTf8H32rvJDeI57MoYrcOTGYRU_oOSQ&s" 
+                    src="https://cdn.prod.website-files.com/62233c592d2a1e009d42f46c/66c90639aaac7e1d7b548961_668633c716cd92917222d909_Anssi.webp" 
                     alt="CERT-FR"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -353,7 +352,7 @@ const Veille = () => {
                   <img 
                     src="https://cybermaretique.fr/wp-content/themes/palmeria/images/header_image.jpg" 
                     alt="Cyber Marétique"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -368,7 +367,7 @@ const Veille = () => {
                   <img 
                     src="https://upload.wikimedia.org/wikipedia/commons/2/2b/ZDNET_Official_Logo.png" 
                     alt="ZDNet"
-                    className="w-full rounded-lg"
+                    className="w-full h-48 object-contain rounded-lg"
                   />
                 </div>
 
@@ -383,7 +382,7 @@ const Veille = () => {
                   <img 
                     src="https://www.vaadata.com/img/logo_vaadata_dark.svg" 
                     alt="Le blog de Vaadata"
-                    className="w-full rounded-lg bg-white p-4"
+                    className="w-full h-48 object-contain rounded-lg bg-white p-4"
                   />
                 </div>
               </div>
