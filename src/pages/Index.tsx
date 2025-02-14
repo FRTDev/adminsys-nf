@@ -18,28 +18,57 @@ const Index = () => {
   const certifications = [
     {
       name: "SECNUM Académie - Mooc de l'ANSSI",
-      date: "2024",
+      date: "Octobre 2023",
       description: "Formation en cybersécurité dispensée par l'ANSSI"
     },
     {
-      name: "Cisco - CyberSecurity Essentials",
-      date: "2023",
-      description: "Fondamentaux de la cybersécurité"
+      name: "Cisco - CCNAv7 : Introduction aux réseaux",
+      date: "Mai 2024",
+      description: "Formation aux fondamentaux des réseaux"
+    },
+    {
+      name: "Cisco - English for IT 1",
+      date: "Novembre 2024",
+      description: "Formation en anglais technique pour l'informatique"
+    },
+    {
+      name: "Cisco - Ethical Hacker",
+      date: "En cours",
+      description: "Formation aux techniques de hacking éthique"
     }
   ];
 
   const education = [
     {
+      title: "DEC en Techniques de l'informatique",
+      institution: "Cégep La Pocatière, Québec",
+      period: "Août 2025 - Juin 2026",
+      description: "Formation avancée en informatique (10 mois)"
+    },
+    {
       title: "BTS SIO SISR",
-      institution: "Lycée Sainte Marguerite, Tours",
-      period: "2022 - 2024",
+      institution: "Lycée Paul-Louis Courier, France",
+      period: "2023 - 2025",
       description: "Formation en solutions d'infrastructure, systèmes et réseaux"
     },
     {
-      title: "Bac Pro SN RISC",
-      institution: "Lycée Sainte Marguerite, Tours",
-      period: "2019 - 2022",
-      description: "Formation en systèmes numériques option réseaux informatiques et systèmes communicants"
+      title: "Baccalauréat STI2D",
+      institution: "Lycée Grandmont, France",
+      period: "2020 - 2023",
+      description: "Sciences et Technologies de l'Industrie et du Développement Durable - Mention Bien"
+    }
+  ];
+
+  const professionalExperience = [
+    {
+      title: "Stage - Audilab Ressource",
+      period: "Janvier 2025 - Février 2025",
+      description: "Stage de seconde année BTS (6 semaines)"
+    },
+    {
+      title: "Stage - Armatis",
+      period: "Mai 2024 - Juin 2024",
+      description: "Stage de première année BTS - Relation client (5 semaines)"
     }
   ];
 
@@ -84,8 +113,8 @@ const Index = () => {
           </div>
 
           {/* Right Column - About Me */}
-          <div className="lg:w-1/2">
-            <div className="glass p-8 rounded-lg animate-fadeIn h-full">
+          <div className="lg:w-1/2 flex items-center">
+            <div className="glass p-8 rounded-lg animate-fadeIn w-full">
               <div className="flex items-center mb-6">
                 <User className="w-6 h-6 text-white mr-3" />
                 <h2 className="text-2xl font-bold text-white">À propos de moi</h2>
@@ -163,21 +192,52 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Education Section */}
+        {/* Education & Experience Section */}
         <div className="mb-16 animate-fadeIn">
           <div className="glass p-8 rounded-lg">
             <div className="flex items-center mb-6">
               <GraduationCap className="w-6 h-6 text-white mr-3" />
               <h2 className="text-2xl font-bold text-white">Parcours</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {education.map((edu, index) => (
-                <div key={index} className="glass p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-white">{edu.title}</h3>
-                  <p className="text-sm text-gray-400">{edu.institution} | {edu.period}</p>
-                  <p className="text-gray-300 mt-2">{edu.description}</p>
+            <div className="space-y-8">
+              {/* Formation */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-white mb-4">Formation</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {education.map((edu, index) => (
+                    <div key={index} className="glass p-4 rounded-lg">
+                      <h4 className="text-lg font-semibold text-white">{edu.title}</h4>
+                      <p className="text-sm text-gray-400">{edu.institution} | {edu.period}</p>
+                      <p className="text-gray-300 mt-2">{edu.description}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* Professional Experience */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-white mb-4">Expérience professionnelle</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {professionalExperience.map((exp, index) => (
+                    <div key={index} className="glass p-4 rounded-lg">
+                      <h4 className="text-lg font-semibold text-white">{exp.title}</h4>
+                      <p className="text-sm text-gray-400">{exp.period}</p>
+                      <p className="text-gray-300 mt-2">{exp.description}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-gray-400 mt-4 text-center">
+                  Pour voir tous mes jobs étudiants, consultez mon profil{" "}
+                  <a
+                    href="https://www.linkedin.com/in/noah-f-b3a500265/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    LinkedIn
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
