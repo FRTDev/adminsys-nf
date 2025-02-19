@@ -42,19 +42,19 @@ const Index = () => {
       title: "DEC en Techniques de l'informatique",
       institution: "Cégep La Pocatière, Québec",
       period: "Août 2025 - Juin 2026",
-      description: "Formation avancée en informatique (10 mois)"
+      description: "Formation intensive en informatique au Québec axée sur les nouvelles technologies et la gestion de projets. Approfondissement des compétences en administration système, virtualisation et sécurité informatique."
     },
     {
       title: "BTS SIO SISR",
       institution: "Lycée Paul-Louis Courier, France",
       period: "2023 - 2025",
-      description: "Formation en solutions d'infrastructure, systèmes et réseaux"
+      description: "Formation spécialisée en administration des systèmes et réseaux. Acquisition de compétences en gestion d'infrastructure, sécurisation des réseaux, virtualisation et mise en place de solutions d'hébergement."
     },
     {
       title: "Baccalauréat STI2D",
       institution: "Lycée Grandmont, France",
       period: "2020 - 2023",
-      description: "Sciences et Technologies de l'Industrie et du Développement Durable - Mention Bien"
+      description: "Formation technologique avec spécialisation en systèmes d'information et numérique. Développement des compétences fondamentales en informatique et découverte des technologies innovantes."
     }
   ];
 
@@ -62,12 +62,12 @@ const Index = () => {
     {
       title: "Stage - Audilab Ressource",
       period: "Janvier 2025 - Février 2025",
-      description: "Stage de seconde année BTS (6 semaines)"
+      description: "Stage de seconde année BTS orienté infrastructure IT. Participation à la gestion du parc informatique, déploiement de solutions de supervision et maintenance des systèmes d'information."
     },
     {
       title: "Stage - Armatis",
       period: "Mai 2024 - Juin 2024",
-      description: "Stage de première année BTS (5 semaines)"
+      description: "Stage de première année BTS focalisé sur l'administration système. Intervention sur l'infrastructure réseau, gestion des serveurs et support utilisateur dans un environnement professionnel."
     }
   ];
 
@@ -203,6 +203,14 @@ const Index = () => {
               {/* Timeline line */}
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-white/20" />
 
+              {/* Formation Title */}
+              <div className="relative ml-16">
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5" />
+                  Formation
+                </h3>
+              </div>
+
               {/* Timeline items - Formation */}
               {education.map((edu, index) => (
                 <div key={index} className="relative ml-16 animate-fadeIn" style={{ animationDelay: `${index * 100}ms` }}>
@@ -219,6 +227,14 @@ const Index = () => {
                   </div>
                 </div>
               ))}
+
+              {/* Experience Title with extra margin */}
+              <div className="relative ml-16 mt-12">
+                <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                  <Briefcase className="w-5 h-5" />
+                  Expérience Professionnelle
+                </h3>
+              </div>
 
               {/* Timeline items - Professional Experience */}
               {professionalExperience.map((exp, index) => (
