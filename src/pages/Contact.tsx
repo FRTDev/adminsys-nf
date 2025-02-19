@@ -6,7 +6,6 @@ import { useToast } from "@/components/ui/use-toast";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -18,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import emailjs from '@emailjs/browser';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -36,6 +36,8 @@ const formSchema = z.object({
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,21 +48,38 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    const mailtoLink = `mailto:n.froment37@gmail.com?subject=${encodeURIComponent(
-      values.subject
-    )}&body=${encodeURIComponent(
-      `De: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
-    )}`;
-
-    window.location.href = mailtoLink;
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setIsLoading(true);
     
-    toast({
-      title: "Message envoyé !",
-      description: "Votre message a été préparé dans votre client mail.",
-    });
+    try {
+      await emailjs.send(
+        'service_yg7jes9', // Votre Service ID de EmailJS
+        'template_v0rjpjn', // Votre Template ID de EmailJS
+        {
+          from_name: values.name,
+          from_email: values.email,
+          subject: values.subject,
+          message: values.message,
+          to_name: 'Noah',
+        },
+        'KvvYow-hvBapD8x9a' // Votre Public Key de EmailJS
+      );
 
-    form.reset();
+      toast({
+        title: "Message envoyé !",
+        description: "Votre message a été envoyé avec succès.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi du message.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -155,9 +174,14 @@ const Contact = () => {
                 <Button 
                   type="submit" 
                   className="w-full flex items-center justify-center gap-2"
+                  disabled={isLoading}
                 >
-                  <Send className="w-4 h-4" />
-                  Envoyer le message
+                  {isLoading ? (
+                    <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent" />
+                  ) : (
+                    <Send className="w-4 h-4" />
+                  )}
+                  {isLoading ? "Envoi en cours..." : "Envoyer le message"}
                 </Button>
               </form>
             </Form>
@@ -182,3 +206,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

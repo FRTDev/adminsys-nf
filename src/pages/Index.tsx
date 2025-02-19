@@ -39,10 +39,10 @@ const Index = () => {
 
   const education = [
     {
-      title: "DEC en Techniques de l'informatique",
+      title: "DEC en Techniques de l'informatique (Projet)",
       institution: "Cégep La Pocatière, Québec",
-      period: "Août 2025 - Juin 2026",
-      description: "Formation intensive en informatique au Québec axée sur les nouvelles technologies et la gestion de projets. Approfondissement des compétences en administration système, virtualisation et sécurité informatique."
+      period: "2025 - 2026",
+      description: "Projet d'études au Québec pour approfondir mes connaissances en informatique. Formation intensive axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international."
     },
     {
       title: "BTS SIO SISR",
