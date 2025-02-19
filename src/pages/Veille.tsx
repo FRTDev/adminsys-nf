@@ -194,7 +194,7 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">Root-Me est la plateforme la plus connue des recruteurs et des passionnées de sécurité</p>
                   <img 
-                    src="https://shop.root-me.org/cdn/shop/files/yt_banner_red_full.png?v=1686869864&width=3840" 
+                    src="https://cdn.prod.website-files.com/631b1462bd15d1fa4ca063ff/673c95e996cdb250a344d1ad_656efb8fa8660962daa4df6a_Capture%2520d%25E2%2580%2599e%25CC%2581cran%25202023-12-05%2520a%25CC%2580%252011.29.25.png" 
                     alt="Root-Me"
                     className="w-full rounded-lg"
                   />
@@ -209,7 +209,7 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">Plateforme de hacking éthique gamifiée très accessible au départ et proposant des Meet-up réguliers</p>
                   <img 
-                    src="https://cdn.tech.eu/uploads/2019/04/Hack-The-Box-logo.png" 
+                    src="https://cdn.prod.website-files.com/631b1462bd15d1fa4ca063ff/673c95e996cdb250a344d1a2_656efe3a5b9d1e66b7702d1c_Capture%2520d%25E2%2580%2599e%25CC%2581cran%25202023-12-05%2520a%25CC%2580%252011.40.46.png" 
                     alt="HackTheBox"
                     className="w-full rounded-lg"
                   />
@@ -224,7 +224,7 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">Plateforme dédiée à l'OSINT très bien designée par l'équipe d'un intervenant d'Oteria</p>
                   <img 
-                    src="https://ozint.eu/assets/images/brand/osintopia-preview.png" 
+                    src="https://cdn.prod.website-files.com/631b1462bd15d1fa4ca063ff/673c95e996cdb250a344d1bb_656f04277d6ee11193403728_Capture%2520d%25E2%2580%2599e%25CC%2581cran%25202023-12-05%2520a%25CC%2580%252012.06.01.png" 
                     alt="OZINT"
                     className="w-full rounded-lg"
                   />
@@ -239,7 +239,7 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">The Osint Project c'est une plateforme de challenges qui te font découvrir le web autrement !</p>
                   <img 
-                    src="https://testcy.forge.apps.education.fr/cyber/4.Sites_challenges/images_sites_challenges/The-Osint-Project.png" 
+                    src="https://cdn.prod.website-files.com/631b1462bd15d1fa4ca063ff/673c95e996cdb250a344d1aa_656f04bf21fcd99fe39d8de5_Capture%2520d%25E2%2580%2599e%25CC%2581cran%25202023-12-05%2520a%25CC%2580%252012.08.34.png" 
                     alt="THE OSINT PROJECT"
                     className="w-full rounded-lg"
                   />
@@ -254,7 +254,7 @@ const Veille = () => {
                   </h3>
                   <p className="text-gray-300 mb-4">L'école spécialisée dans la reconversion en cybersécurité, propose des dizaines d'heures de cours pour débutants en cybersécurité, et cela gratuitement, sur sa plateforme d'apprentissage JULIE.</p>
                   <img 
-                    src="https://cdn.prod.website-files.com/62233c592d2a1e009d42f46c/672b0bab5fa6662390baf564_6414802c0a2bea367cbc795b_logo-jedha-square.svg" 
+                    src="https://cdn.prod.website-files.com/631b1462bd15d1fa4ca063ff/673c95e996cdb250a344d1a7_660be7a9ade50abe67413fa6_Capture%2520d%25E2%2580%2599e%25CC%2581cran%25202024-04-02%2520a%25CC%2580%252013.10.22.png" 
                     alt="JEDHA"
                     className="w-full rounded-lg"
                   />
@@ -274,11 +274,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Le blog des études et des métiers de la cybersécurité.</p>
-                  <img 
-                    src="https://cdn.prod.website-files.com/631af61fe0ed5ef2ac053726/632f1285e846c05180df5387_open-graph-oteria-cyber-school.svg" 
-                    alt="Café Cyber"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -289,11 +284,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Plateforme créée et animée par le célèbre Damien Bancal et tenant les usagers au courant des dernières technologies, attaques informatiques...</p>
-                  <img 
-                    src="https://www.zataz.com/wp-content/uploads/Noir-et-Blanc-Encadre-Future-DJ-Logo.png" 
-                    alt="Zataz"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -304,11 +294,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">L'un des sites les plus consultés dans le monde par les professionnels de la sécurité IT</p>
-                  <img 
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucioIaLjDLMVbAzsIDpaYM754ZmWwLu6oPFfZ95bcJQK9paBjdrkpQnnjTExUWJbExlV10x25riYersOaWF_TFGCFvlw52qXMvrNMGacAb6nkP1RBTMGL1yWdvoajXbj5qf4U9O_sH6tH-BxNpOveZnxMT6bVDX57FaKB1jFlbPExVQgmA4HKKuROJA/s1700/THN.jpg" 
-                    alt="TheHackerNews"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -319,11 +304,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Blog de la start-up Crowdstrike donnant un angle différent à l'actualité de la cybersécurité</p>
-                  <img 
-                    src="https://www.ignition-technology.com/ne/wp-content/uploads/sites/17/2024/02/News-Thumbnails-Crowdstrike-1200x1200.jpg" 
-                    alt="Blog Crowstrike"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -334,11 +314,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Le Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques</p>
-                  <img 
-                    src="https://cdn.prod.website-files.com/62233c592d2a1e009d42f46c/66c90639aaac7e1d7b548961_668633c716cd92917222d909_Anssi.webp" 
-                    alt="CERT-FR"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -349,11 +324,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Toute l'actualité de la cybersécurité maritime est présente sur ce site</p>
-                  <img 
-                    src="https://cybermaretique.fr/wp-content/themes/palmeria/images/header_image.jpg" 
-                    alt="Cyber Marétique"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -364,11 +334,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Site donnant une vision assez large sur les dernières actualités tech et innovation</p>
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/2b/ZDNET_Official_Logo.png" 
-                    alt="ZDNet"
-                    className="w-full h-48 object-contain rounded-lg"
-                  />
                 </div>
 
                 <div className="glass p-4 rounded-lg">
@@ -379,11 +344,6 @@ const Veille = () => {
                     </a>
                   </h3>
                   <p className="text-gray-300 mb-4">Vaadata est une société spécialisée en pentest. Elle publie des articles sur la sécurité : les défis techniques et enjeux de société.</p>
-                  <img 
-                    src="https://www.vaadata.com/img/logo_vaadata_dark.svg" 
-                    alt="Le blog de Vaadata"
-                    className="w-full h-48 object-contain rounded-lg bg-white p-4"
-                  />
                 </div>
               </div>
             </div>
