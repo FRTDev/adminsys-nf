@@ -10,6 +10,7 @@ import Veille from "./pages/Veille";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+// Créer une instance du QueryClient
 const queryClient = new QueryClient();
 
 const App = () => (

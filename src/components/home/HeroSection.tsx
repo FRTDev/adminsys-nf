@@ -1,6 +1,6 @@
 
-import { Code } from "lucide-react";
-import { Linkedin, Mail } from "lucide-react";
+import { Code, Linkedin, Mail } from "lucide-react";
+import { SocialLink } from "@/components/shared/SocialLink";
 
 const HeroSection = () => {
   return (
@@ -12,29 +12,28 @@ const HeroSection = () => {
             <Code className="w-16 h-16 text-white" />
           </div>
         </div>
+        
         <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6 tracking-tight">
           Noah F.
         </h1>
+        
         <p className="text-2xl text-gray-400 mb-8 leading-relaxed">
           Étudiant en BTS SIO SISR
         </p>
+        
         <div className="flex justify-center space-x-4">
-          <a
-            href="https://www.linkedin.com/in/noah-f-b3a500265/"
-            className="text-gray-400 hover:text-white transition-colors p-3 glass rounded-full hover:bg-white/15"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="w-5 h-5" />
-          </a>
-          <a
-            href="mailto:n.froment37@gmail.com"
-            className="text-gray-400 hover:text-white transition-colors p-3 glass rounded-full hover:bg-white/15"
-            aria-label="Email"
-          >
-            <Mail className="w-5 h-5" />
-          </a>
+          <SocialLink 
+            href="https://www.linkedin.com/in/noah-f-b3a500265/" 
+            icon={<Linkedin className="w-5 h-5" />} 
+            label="LinkedIn" 
+            isExternal
+          />
+          
+          <SocialLink 
+            href="mailto:n.froment37@gmail.com" 
+            icon={<Mail className="w-5 h-5" />} 
+            label="Email" 
+          />
         </div>
       </div>
     </div>

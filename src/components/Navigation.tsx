@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { NavLink } from "./shared/NavLink";
 
 const NAV_ITEMS = [
   { name: "Accueil", path: "/" },
@@ -14,10 +15,6 @@ const NAV_ITEMS = [
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
-  const isActiveLink = (path: string) => {
-    return location.pathname === path;
-  };
 
   const handleToggleMenu = () => {
     setIsOpen(!isOpen);
@@ -42,17 +39,15 @@ const Navigation = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {NAV_ITEMS.map((item) => (
-                  <Link
+                  <NavLink
                     key={item.name}
                     to={item.path}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActiveLink(item.path)
-                        ? "text-white bg-white/10"
-                        : "text-gray-300 hover:text-white hover:bg-white/5"
-                    }`}
+                    isActive={location.pathname === item.path}
+                    onClick={handleCloseMenu}
+                    isMobile={false}
                   >
                     {item.name}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
             </div>
@@ -76,18 +71,15 @@ const Navigation = () => {
           <div className="md:hidden glass-dark animate-fadeIn">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {NAV_ITEMS.map((item) => (
-                <Link
+                <NavLink
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
-                    isActiveLink(item.path)
-                      ? "text-white bg-white/10"
-                      : "text-gray-300 hover:text-white hover:bg-white/5"
-                  }`}
+                  isActive={location.pathname === item.path}
                   onClick={handleCloseMenu}
+                  isMobile={true}
                 >
                   {item.name}
-                </Link>
+                </NavLink>
               ))}
             </div>
           </div>

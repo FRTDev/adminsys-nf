@@ -1,5 +1,7 @@
 
 import { GraduationCap, Briefcase } from "lucide-react";
+import { SectionTitle } from "@/components/shared/SectionTitle";
+import { TimelineItem } from "./TimelineItem";
 
 type Education = {
   title: string;
@@ -23,10 +25,7 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
   return (
     <div className="mb-16 animate-fadeIn">
       <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10">
-        <div className="flex items-center mb-6">
-          <GraduationCap className="w-6 h-6 text-white mr-3" />
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Parcours</h2>
-        </div>
+        <SectionTitle icon={<GraduationCap className="w-6 h-6 text-white" />} title="Parcours" />
         
         <div className="relative space-y-8">
           {/* Timeline */}
@@ -41,22 +40,14 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
           </div>
 
           {education.map((edu, index) => (
-            <div 
-              key={index} 
-              className="relative ml-16 animate-fadeIn" 
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40 z-10 shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
-              <div className="glass p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-white/15 border border-white/10">
-                <h4 className="text-xl font-semibold text-white flex items-center gap-2">
-                  <GraduationCap className="w-4 h-4" />
-                  {edu.title}
-                </h4>
-                <p className="text-sm text-gray-400 italic">{edu.institution} | {edu.period}</p>
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-3"></div>
-                <p className="text-base text-gray-300">{edu.description}</p>
-              </div>
-            </div>
+            <TimelineItem 
+              key={index}
+              icon={<GraduationCap className="w-4 h-4" />}
+              title={edu.title}
+              subtitle={`${edu.institution} | ${edu.period}`}
+              description={edu.description}
+              delay={index * 150}
+            />
           ))}
 
           {/* Experience Section */}
@@ -68,22 +59,14 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
           </div>
 
           {professionalExperience.map((exp, index) => (
-            <div 
-              key={index} 
-              className="relative ml-16 animate-fadeIn" 
-              style={{ animationDelay: `${(education.length + index) * 150}ms` }}
-            >
-              <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40 z-10 shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
-              <div className="glass p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-white/15 border border-white/10">
-                <h4 className="text-xl font-semibold text-white flex items-center gap-2">
-                  <Briefcase className="w-4 h-4" />
-                  {exp.title}
-                </h4>
-                <p className="text-sm text-gray-400 italic">{exp.period}</p>
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-3"></div>
-                <p className="text-base text-gray-300">{exp.description}</p>
-              </div>
-            </div>
+            <TimelineItem 
+              key={index}
+              icon={<Briefcase className="w-4 h-4" />}
+              title={exp.title}
+              subtitle={exp.period}
+              description={exp.description}
+              delay={(education.length + index) * 150}
+            />
           ))}
 
           <p className="text-base text-gray-400 mt-8 text-center relative z-10">
