@@ -10,11 +10,11 @@ import { certifications, education, professionalExperience } from "@/data/resume
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background bg-gradient-to-br from-background to-background/70">
       <Navigation />
       
       {/* Main Content */}
-      <div className="container mx-auto px-4 pt-20">
+      <div className="container mx-auto px-4 pt-20 pb-10">
         {/* Hero and About Section */}
         <div className="flex flex-col lg:flex-row gap-8 mb-16">
           <HeroSection />
