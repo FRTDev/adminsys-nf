@@ -97,10 +97,10 @@ ${values.message}
                 <MessageSquare className="w-12 h-12 text-white" />
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight">
               Contactez-moi
             </h1>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl sm:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
               Une question, une proposition ou simplement envie de discuter ? N'hésitez pas à m'envoyer un message !
             </p>
           </div>
@@ -118,11 +118,11 @@ ${values.message}
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nom</FormLabel>
+                      <FormLabel className="text-base font-medium">Nom</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="John Doe" {...field} className="text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-sm" />
                     </FormItem>
                   )}
                 />
@@ -132,11 +132,11 @@ ${values.message}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-base font-medium">Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="john.doe@example.com" {...field} />
+                        <Input placeholder="john.doe@example.com" {...field} className="text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-sm" />
                     </FormItem>
                   )}
                 />
@@ -146,11 +146,11 @@ ${values.message}
                   name="subject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Sujet</FormLabel>
+                      <FormLabel className="text-base font-medium">Sujet</FormLabel>
                       <FormControl>
-                        <Input placeholder="Le sujet de votre message" {...field} />
+                        <Input placeholder="Le sujet de votre message" {...field} className="text-base" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-sm" />
                     </FormItem>
                   )}
                 />
@@ -160,22 +160,22 @@ ${values.message}
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="text-base font-medium">Message</FormLabel>
                       <FormControl>
                         <Textarea 
                           placeholder="Écrivez votre message ici..."
-                          className="min-h-[150px]"
+                          className="min-h-[150px] text-base"
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-sm" />
                     </FormItem>
                   )}
                 />
 
                 <Button 
                   type="submit" 
-                  className="w-full flex items-center justify-center gap-2"
+                  className="w-full flex items-center justify-center gap-2 text-base py-6"
                   disabled={isLoading}
                 >
                   {isLoading ? (
@@ -190,13 +190,13 @@ ${values.message}
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-gray-400">
+            <p className="text-base text-gray-400">
               Vous pouvez également me contacter directement par email à{" "}
               <a
                 href="mailto:n.froment37@gmail.com"
-                className="text-white hover:text-primary transition-colors flex items-center justify-center gap-2 mt-2"
+                className="text-white hover:text-primary transition-colors flex items-center justify-center gap-2 mt-2 text-lg font-medium"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-5 h-5" />
                 n.froment37@gmail.com
               </a>
             </p>

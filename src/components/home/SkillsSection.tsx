@@ -18,7 +18,7 @@ const SkillsSection = () => {
     <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10">
       <div className="flex items-center mb-6">
         <Code className="w-6 h-6 text-white mr-3" />
-        <h2 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Compétences</h2>
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Compétences</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {Object.entries(skills).map(([category, skillList], categoryIndex) => (
@@ -28,16 +28,16 @@ const SkillsSection = () => {
             style={{ animationDelay: `${categoryIndex * 100}ms` }}
           >
             <div className="flex items-center mb-3">
-              {category === "development" && <Code className="w-4 h-4 text-white mr-2" />}
-              {category === "network" && <Network className="w-4 h-4 text-white mr-2" />}
-              {category === "services" && <Server className="w-4 h-4 text-white mr-2" />}
-              {category === "os" && <Monitor className="w-4 h-4 text-white mr-2" />}
-              {category === "software" && <Wrench className="w-4 h-4 text-white mr-2" />}
-              {category === "virtualization" && <Box className="w-4 h-4 text-white mr-2" />}
-              {category === "deployment" && <Box className="w-4 h-4 text-white mr-2" />}
-              {category === "scripting" && <Terminal className="w-4 h-4 text-white mr-2" />}
-              {category === "management" && <Wrench className="w-4 h-4 text-white mr-2" />}
-              <h3 className="text-sm font-semibold text-white">
+              {category === "development" && <Code className="w-5 h-5 text-white mr-2" />}
+              {category === "network" && <Network className="w-5 h-5 text-white mr-2" />}
+              {category === "services" && <Server className="w-5 h-5 text-white mr-2" />}
+              {category === "os" && <Monitor className="w-5 h-5 text-white mr-2" />}
+              {category === "software" && <Wrench className="w-5 h-5 text-white mr-2" />}
+              {category === "virtualization" && <Box className="w-5 h-5 text-white mr-2" />}
+              {category === "deployment" && <Box className="w-5 h-5 text-white mr-2" />}
+              {category === "scripting" && <Terminal className="w-5 h-5 text-white mr-2" />}
+              {category === "management" && <Wrench className="w-5 h-5 text-white mr-2" />}
+              <h3 className="text-lg font-semibold text-white">
                 {category === "os" && "Systèmes d'exploitation"}
                 {category === "development" && "Développement"}
                 {category === "network" && "Réseau"}
@@ -53,7 +53,7 @@ const SkillsSection = () => {
               {skillList.map((skill, skillIndex) => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1.5 bg-white/10 rounded-full text-xs text-gray-300 hover:bg-white/20 transition-colors duration-300 border border-white/5"
+                  className="px-3 py-1.5 bg-white/10 rounded-full text-sm text-gray-300 hover:bg-white/20 transition-colors duration-300 border border-white/5"
                   style={{ animationDelay: `${(categoryIndex * 100) + (skillIndex * 50)}ms` }}
                 >
                   {skill}

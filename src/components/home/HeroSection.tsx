@@ -12,10 +12,10 @@ const HeroSection = () => {
             <Code className="w-16 h-16 text-white" />
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
+        <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6 tracking-tight">
           Noah F.
         </h1>
-        <p className="text-xl text-gray-400 mb-8">
+        <p className="text-2xl text-gray-400 mb-8 leading-relaxed">
           Étudiant en BTS SIO SISR
         </p>
         <div className="flex justify-center space-x-4">
