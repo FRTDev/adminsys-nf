@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import emailjs from '@emailjs/browser';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -48,36 +47,39 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
     setIsLoading(true);
     
     try {
-      await emailjs.send(
-        'service_yg7jes9', // Votre Service ID de EmailJS
-        'template_v0rjpjn', // Votre Template ID de EmailJS
-        {
-          from_name: values.name,
-          from_email: values.email,
-          subject: values.subject,
-          message: values.message,
-          to_name: 'Noah',
-        },
-        'KvvYow-hvBapD8x9a' // Votre Public Key de EmailJS
-      );
+      // Créer le corps du message avec le nom et l'email de l'expéditeur
+      const body = `
+De: ${values.name} (${values.email})
 
+${values.message}
+      `;
+      
+      // Encoder les paramètres pour le lien mailto
+      const mailtoLink = `mailto:n.froment37@gmail.com?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Ouvrir le client mail par défaut avec les informations pré-remplies
+      window.location.href = mailtoLink;
+      
       toast({
-        title: "Message envoyé !",
-        description: "Votre message a été envoyé avec succès.",
+        title: "Mail préparé !",
+        description: "Votre message a été préparé dans votre client mail.",
       });
-
-      form.reset();
+      
+      // Réinitialiser le formulaire après un court délai
+      setTimeout(() => {
+        form.reset();
+        setIsLoading(false);
+      }, 1000);
     } catch (error) {
       toast({
         title: "Erreur",
-        description: "Une erreur est survenue lors de l'envoi du message.",
+        description: "Une erreur est survenue lors de la préparation du mail.",
         variant: "destructive",
       });
-    } finally {
       setIsLoading(false);
     }
   };
@@ -181,7 +183,7 @@ const Contact = () => {
                   ) : (
                     <Send className="w-4 h-4" />
                   )}
-                  {isLoading ? "Envoi en cours..." : "Envoyer le message"}
+                  {isLoading ? "Préparation du mail..." : "Ouvrir dans mon client mail"}
                 </Button>
               </form>
             </Form>
@@ -206,4 +208,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
