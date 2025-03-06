@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import { useState } from "react";
@@ -17,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import Footer from "@/components/shared/Footer";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -203,6 +203,8 @@ ${values.message}
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

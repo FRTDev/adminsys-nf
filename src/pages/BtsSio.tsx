@@ -1,5 +1,6 @@
 import { BookOpen, Server, Code, Network, Database, Layout, Mail, Linkedin, GraduationCap } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/shared/Footer";
 
 const BtsSio = () => {
   return (
@@ -63,7 +64,7 @@ const BtsSio = () => {
                 <h2 className="text-3xl font-bold text-white">SLAM</h2>
               </div>
               <h3 className="text-xl text-blue-400 mb-4">
-                Solutions Logicielles et Applications Métiers
+                Solutions Logicielles et Applications M��tiers
               </h3>
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 La spécialité SLAM forme des développeurs capables de concevoir et maintenir des solutions applicatives.
@@ -138,29 +139,7 @@ const BtsSio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="glass-dark py-8 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://www.linkedin.com/in/noah-f-b3a500265/"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href="mailto:n.froment37@gmail.com"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Mail className="w-6 h-6" />
-            </a>
-          </div>
-          <div className="mt-4 text-center text-gray-400 text-base">
-            © {new Date().getFullYear()} Portfolio. Tous droits réservés.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
