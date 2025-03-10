@@ -1,11 +1,17 @@
 
 import { Shield, ExternalLink } from "lucide-react";
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Card } from "@/components/shared/Card";
 import Footer from "@/components/shared/Footer";
 
 const Veille = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -100,7 +106,7 @@ const Veille = () => {
               <Card className="mb-6">
                 <ul className="space-y-3 text-gray-300">
                   <li>
-                    <a href="https://www.youtube.com/c/ippsec" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline inline-flex items-center">
+                    <a href="https://www.youtube.com/@ippsec" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline inline-flex items-center">
                       IppSec <ExternalLink className="w-3 h-3 ml-1" />
                     </a> : Walkthroughs de vulnérabilités réelles (CTFs, HackTheBox) avec démonstrations d'exploits.
                   </li>
@@ -110,9 +116,14 @@ const Veille = () => {
                     </a> : Tutoriels sur les attaques réseau (MITM, exploitation de services vulnérables).
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/c/_JohnHammond" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline inline-flex items-center">
+                    <a href="https://www.youtube.com/@_JohnHammond" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline inline-flex items-center">
                       John Hammond <ExternalLink className="w-3 h-3 ml-1" />
                     </a> : Analyse de malwares et reverse engineering d'attaques récentes (ex. ransomware LockBit).
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@HafniumSecuriteInformatique" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:underline inline-flex items-center">
+                      Hafnium <ExternalLink className="w-3 h-3 ml-1" />
+                    </a> : Partage différents cours/tutoriels sur la cybersécurité.
                   </li>
                 </ul>
               </Card>
@@ -277,40 +288,6 @@ const Veille = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
-            </div>
-
-            {/* Divider */}
-            <div className="border-t border-white/10"></div>
-
-            {/* Exemple concret */}
-            <div>
-              <h3 className="text-xl font-bold text-white mb-4">Exemple concret</h3>
-              <Card>
-                <p className="text-gray-300 leading-relaxed">
-                  En 2023, la vulnérabilité <strong className="text-white">Citrix Bleed</strong> (CVE-2023-4966) a permis des vols de sessions critiques. Une veille efficace aurait impliqué :
-                </p>
-                <ol className="pl-5 mt-4 space-y-2 list-decimal text-gray-300">
-                  <li>Surveillance du NVD pour le CVE.</li>
-                  <li>Analyse des PoC partagés sur GitHub ou Exploit-DB.</li>
-                  <li>Déploiement urgent du patch et mise à jour des règles de pare-feu.</li>
-                </ol>
-                <p className="mt-4 text-gray-300">
-                  Ce guide opérationnel te permettra de structurer une veille <strong className="text-white">actionnable</strong>, alignée sur les attentes techniques du BTS SIO SISR.
-                </p>
-              </Card>
-            </div>
-
-            {/* Perplexity.ai logo */}
-            <div className="flex justify-center mt-8">
-              <div className="bg-black p-4 rounded-lg">
-                <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">
-                  <img 
-                    src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" 
-                    alt="Perplexity AI" 
-                    className="h-8"
-                  />
-                </a>
               </div>
             </div>
           </div>
