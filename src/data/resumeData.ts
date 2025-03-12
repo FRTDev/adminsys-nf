@@ -27,19 +27,22 @@ export const education = [
     title: "DEC en Techniques de l'informatique (Projet)",
     institution: "Cégep La Pocatière, Québec",
     period: "2025 - 2026",
-    description: "Projet d'études au Québec pour approfondir mes connaissances en informatique. Formation intensive axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international."
+    description: "Projet d'études au Québec pour approfondir mes connaissances en informatique. Formation intensive axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international.",
+    link: "https://www.cegeplapocatiere.qc.ca/programmes/techniques/techniques-de-linformatique"
   },
   {
     title: "BTS SIO SISR",
     institution: "Lycée Paul-Louis Courier, France",
     period: "2023 - 2025",
-    description: "Formation spécialisée en administration des systèmes et réseaux. Acquisition de compétences en gestion d'infrastructure, sécurisation des réseaux, virtualisation et mise en place de solutions d'hébergement."
+    description: "Formation spécialisée en administration des systèmes et réseaux. Acquisition de compétences en gestion d'infrastructure, sécurisation des réseaux, virtualisation et mise en place de solutions d'hébergement.",
+    link: "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux"
   },
   {
     title: "Baccalauréat STI2D",
     institution: "Lycée Grandmont, France",
     period: "2020 - 2023",
-    description: "Formation technologique avec spécialisation en systèmes d'information et numérique. Développement des compétences fondamentales en informatique et découverte des technologies innovantes."
+    description: "Formation technologique avec spécialisation en systèmes d'information et numérique. Développement des compétences fondamentales en informatique et découverte des technologies innovantes.",
+    link: "https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-techno-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable-enseignement-specifique-architecture-et-construction"
   }
 ];
 
