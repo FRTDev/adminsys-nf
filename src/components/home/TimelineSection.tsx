@@ -8,6 +8,7 @@ type Education = {
   institution: string;
   period: string;
   description: string;
+  link?: string;
 };
 
 type ProfessionalExperience = {
@@ -47,6 +48,7 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
               subtitle={`${edu.institution} | ${edu.period}`}
               description={edu.description}
               delay={index * 150}
+              link={edu.link}
             />
           ))}
 
