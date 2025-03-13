@@ -1,4 +1,3 @@
-
 import { GraduationCap, Briefcase } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { TimelineItem } from "./TimelineItem";
@@ -15,6 +14,7 @@ type ProfessionalExperience = {
   title: string;
   period: string;
   description: string;
+  link?: string;
 };
 
 interface TimelineSectionProps {
@@ -68,6 +68,7 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
               subtitle={exp.period}
               description={exp.description}
               delay={(education.length + index) * 150}
+              link={exp.link}
             />
           ))}
 

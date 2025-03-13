@@ -50,11 +50,13 @@ export const professionalExperience = [
   {
     title: "Stage - Audilab Ressource",
     period: "Janvier 2025 - Février 2025",
-    description: "Stage de seconde année BTS orienté infrastructure IT. Participation à la gestion du parc informatique, déploiement de solutions de supervision et maintenance des systèmes d'information."
+    description: "Stage de seconde année BTS orienté infrastructure IT. Participation à la gestion du parc informatique, déploiement de solutions de supervision et maintenance des systèmes d'information.",
+    link: "https://www.audilab.fr/"
   },
   {
     title: "Stage - Armatis",
     period: "Mai 2024 - Juin 2024",
-    description: "Stage de première année BTS focalisé sur l'administration système. Intervention sur l'infrastructure réseau, gestion des serveurs et support utilisateur dans un environnement professionnel."
+    description: "Stage de première année BTS focalisé sur l'administration système. Intervention sur l'infrastructure réseau, gestion des serveurs et support utilisateur dans un environnement professionnel.",
+    link: "https://www.armatis.com/"
   }
 ];
