@@ -7,6 +7,7 @@ import { NavLink } from "./shared/NavLink";
 const NAV_ITEMS = [
   { name: "Accueil", path: "/" },
   { name: "BTS SIO", path: "/bts-sio" },
+  { name: "Stages", path: "/stages" },
   { name: "Projets", path: "/projets" },
   { name: "Veille", path: "/veille" },
   { name: "Contact", path: "/contact" },
