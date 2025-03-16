@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/shared/Footer";
+import { StagesHero } from "@/components/stages/StagesHero";
 import StagesContent from "@/components/stages/StagesContent";
 
 const Stages = () => {
@@ -14,10 +15,15 @@ const Stages = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Main Content */}
-      <div className="container mx-auto px-4 pt-20 pb-10">
-        <StagesContent />
-      </div>
+      {/* Hero Section */}
+      <StagesHero />
+
+      {/* Content Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <StagesContent />
+        </div>
+      </section>
 
       <Footer />
     </div>
