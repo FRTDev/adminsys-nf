@@ -1,6 +1,7 @@
 
-import { Briefcase } from "lucide-react";
+import { Briefcase, Download } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
+import { Button } from "@/components/ui/button";
 
 const AudilabSummary = () => {
   return (
@@ -9,6 +10,17 @@ const AudilabSummary = () => {
         icon={<Briefcase className="w-6 h-6 text-white" />} 
         title="Analyse Contextualisée du Stage Professionnel chez Audilab" 
       />
+      
+      <div className="mb-6 flex justify-center">
+        <Button 
+          variant="outline" 
+          className="border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white transition-all"
+          onClick={() => window.open('/Rapport de stage - FROMENT Noah - Audilab.pdf', '_blank')}
+        >
+          <Download className="mr-2 h-4 w-4" />
+          Télécharger le rapport complet
+        </Button>
+      </div>
       
       <div className="prose prose-invert max-w-none">
         <p className="text-gray-300">

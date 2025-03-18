@@ -1,5 +1,5 @@
 
-import { Briefcase, Building, Table } from "lucide-react";
+import { Building, Table } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ArmatisSummary from "./ArmatisSummary";
 import AudilabSummary from "./AudilabSummary";
@@ -25,19 +25,19 @@ const StagesContent = () => {
         </TabsList>
         
         <TabsContent value="armatis" className="mt-6">
-          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 hover:scale-[1.01] transition-transform duration-300">
+          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 transform hover:scale-[1.01] transition-transform duration-300">
             <ArmatisSummary />
           </div>
         </TabsContent>
         
         <TabsContent value="audilab" className="mt-6">
-          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 hover:scale-[1.01] transition-transform duration-300">
+          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 transform hover:scale-[1.01] transition-transform duration-300">
             <AudilabSummary />
           </div>
         </TabsContent>
         
         <TabsContent value="comparison" className="mt-6">
-          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 hover:scale-[1.01] transition-transform duration-300">
+          <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10 transform hover:scale-[1.01] transition-transform duration-300">
             <div className="flex items-center mb-6">
               <Table className="w-8 h-8 text-white mr-3" />
               <h2 className="text-3xl font-bold text-white">Tableau Comparatif des Deux Entreprises</h2>
