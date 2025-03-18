@@ -1,12 +1,14 @@
 
-import { Award } from "lucide-react";
+import { Award, Download } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { Card } from "@/components/shared/Card";
+import { Button } from "@/components/ui/button";
 
 type Certification = {
   name: string;
   date: string;
   description: string;
+  attestationPath: string | null;
 };
 
 interface CertificationsSectionProps {
@@ -32,7 +34,21 @@ const CertificationsSection = ({ certifications }: CertificationsSectionProps) =
                   <h3 className="text-xl font-semibold text-white">{cert.name}</h3>
                 </div>
                 <p className="text-sm text-gray-400 mb-3 italic">{cert.date}</p>
-                <p className="text-base text-gray-300 mt-auto">{cert.description}</p>
+                <p className="text-base text-gray-300 mb-4">{cert.description}</p>
+                
+                {cert.attestationPath && (
+                  <div className="mt-auto">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white transition-all"
+                      onClick={() => window.open(cert.attestationPath as string, '_blank')}
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      Télécharger l'attestation
+                    </Button>
+                  </div>
+                )}
               </div>
             </Card>
           ))}
