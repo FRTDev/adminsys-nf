@@ -15,7 +15,7 @@ const ArmatisSummary = () => {
         <Button 
           variant="outline" 
           className="border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white transition-all"
-          onClick={() => window.open('https://raw.githubusercontent.com/noahfroment/Portfolio/main/public/Rapport%20de%20stage%20-%20FROMENT%20Noah%20-%20Armatis.pdf', '_blank')}
+          onClick={() => window.open('/rapport-armatis.pdf', '_blank')}
         >
           <Download className="mr-2 h-4 w-4" />
           Télécharger le rapport complet
