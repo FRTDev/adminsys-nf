@@ -36,8 +36,8 @@ const CertificationsSection = ({ certifications }: CertificationsSectionProps) =
                 <p className="text-sm text-gray-400 mb-3 italic">{cert.date}</p>
                 <p className="text-base text-gray-300 mb-4">{cert.description}</p>
                 
-                {cert.attestationPath && (
-                  <div className="mt-auto">
+                <div className="mt-auto">
+                  {cert.attestationPath ? (
                     <Button 
                       variant="outline" 
                       size="sm"
@@ -47,8 +47,18 @@ const CertificationsSection = ({ certifications }: CertificationsSectionProps) =
                       <Download className="mr-2 h-4 w-4" />
                       Télécharger l'attestation
                     </Button>
-                  </div>
-                )}
+                  ) : (
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border border-white/20 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white/80 transition-all cursor-not-allowed"
+                      disabled
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      En cours...
+                    </Button>
+                  )}
+                </div>
               </div>
             </Card>
           ))}
