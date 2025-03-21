@@ -15,8 +15,6 @@ const AboutSection = () => {
           des compétences solides en gestion d'infrastructure IT et en sécurité des 
           systèmes d'information.
         </p>
-        
-        <div className="mt-4 w-full h-1 bg-gradient-to-r from-white/5 via-white/20 to-white/5 rounded-full"></div>
       </div>
     </div>
   );

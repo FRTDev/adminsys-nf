@@ -7,7 +7,7 @@ import { ResourcesKeySection } from "./ResourcesKeySection";
 
 export const VeilleContent = () => {
   return (
-    <div className="glass p-8 rounded-lg space-y-10">
+    <div className="glass p-8 rounded-lg shadow-xl border border-white/10 space-y-10">
       {/* Introduction */}
       <IntroductionSection />
 

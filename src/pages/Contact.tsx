@@ -21,8 +21,9 @@ const Contact = () => {
 
       {/* Contact Form Section */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto glass p-8 rounded-lg border border-white/10 shadow-lg">
           <ContactForm />
+          <div className="border-t border-white/10 my-8"></div>
           <ContactInfo />
         </div>
       </section>

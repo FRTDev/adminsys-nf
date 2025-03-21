@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="lg:w-1/2">
       <div className="glass p-8 rounded-lg animate-fadeIn text-center shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10">
         <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 rounded-full glass flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.15)] relative">
+          <div className="w-32 h-32 rounded-full glass flex items-center justify-center shadow-lg relative bg-white/5 border border-white/10">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-transparent opacity-50"></div>
             <Code className="w-16 h-16 text-white" />
           </div>

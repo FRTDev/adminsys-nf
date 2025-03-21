@@ -22,18 +22,22 @@ const Index = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mb-16 animate-fadeIn">
+        <div className="mb-16 animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
           <SkillsSection />
         </div>
 
         {/* Certifications Section */}
-        <CertificationsSection certifications={certifications} />
+        <div className="mb-16 animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
+          <CertificationsSection certifications={certifications} />
+        </div>
 
         {/* Education & Experience Section */}
-        <TimelineSection 
-          education={education} 
-          professionalExperience={professionalExperience} 
-        />
+        <div className="animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
+          <TimelineSection 
+            education={education} 
+            professionalExperience={professionalExperience} 
+          />
+        </div>
       </div>
 
       <Footer />

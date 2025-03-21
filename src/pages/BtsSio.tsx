@@ -19,10 +19,11 @@ const BtsSio = () => {
       {/* Hero Section */}
       <BtsHero />
 
-      {/* Specialties Section */}
+      {/* Content Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto glass p-8 rounded-lg border border-white/10 shadow-lg">
           <SpecialtiesSection />
+          <div className="border-t border-white/10 my-12"></div>
           <ProgramSection />
         </div>
       </section>

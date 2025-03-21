@@ -19,7 +19,7 @@ const Stages = () => {
       <StagesHero />
 
       {/* Content Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 animate-slideInUp">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 animate-fadeIn">
         <div className="max-w-7xl mx-auto">
           <StagesContent />
         </div>
