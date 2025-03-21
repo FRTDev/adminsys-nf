@@ -19,10 +19,6 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["SF Pro Display", "Inter", "system-ui", "sans-serif"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -92,14 +88,6 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
-        shine: {
-          "0%": { backgroundPosition: "200% 0" },
-          "100%": { backgroundPosition: "-200% 0" },
-        },
-        "text-shimmer": {
-          "0%": { backgroundPosition: "100%" },
-          "100%": { backgroundPosition: "0%" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -109,8 +97,6 @@ export default {
         slideInUp: "slideInUp 0.5s ease-out forwards",
         pulse: "pulse 3s ease-in-out infinite",
         float: "float 4s ease-in-out infinite",
-        shine: "shine 8s ease-in-out infinite",
-        "text-shimmer": "text-shimmer 2s linear infinite",
       },
     },
   },

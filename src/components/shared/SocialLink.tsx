@@ -12,7 +12,7 @@ export const SocialLink = ({ href, icon, label, isExternal = false }: SocialLink
   return (
     <a
       href={href}
-      className="text-gray-400 hover:text-white transition-colors p-2.5 glass rounded-full hover:bg-white/10"
+      className="text-gray-400 hover:text-white transition-colors p-3 glass rounded-full hover:bg-white/15"
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
       aria-label={label}

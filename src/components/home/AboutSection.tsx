@@ -5,8 +5,8 @@ import { SectionTitle } from "@/components/shared/SectionTitle";
 const AboutSection = () => {
   return (
     <div className="lg:w-1/2 flex items-center">
-      <div className="glass p-8 rounded-xl animate-fadeIn w-full shadow-lg border border-white/5 transition-all duration-300 hover:bg-white/10">
-        <SectionTitle icon={<User className="w-5 h-5 text-white/80" />} title="À propos de moi" />
+      <div className="glass p-8 rounded-lg animate-fadeIn w-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10">
+        <SectionTitle icon={<User className="w-6 h-6 text-white" />} title="À propos de moi" />
         
         <p className="text-lg text-gray-300 leading-relaxed">
           Actuellement en deuxième année de BTS SIO avec une spécialisation en SISR 
@@ -16,7 +16,7 @@ const AboutSection = () => {
           systèmes d'information.
         </p>
         
-        <div className="mt-6 w-full h-px bg-gradient-to-r from-white/5 via-white/10 to-white/5 rounded-full"></div>
+        <div className="mt-4 w-full h-1 bg-gradient-to-r from-white/5 via-white/20 to-white/5 rounded-full"></div>
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ interface SectionTitleProps {
 
 export const SectionTitle = ({ icon, title }: SectionTitleProps) => {
   return (
-    <div className="flex items-center mb-4">
-      <div className="mr-3 p-2 rounded-full bg-black/20 border border-white/5">{icon}</div>
-      <h2 className="text-2xl font-medium text-gradient">
+    <div className="flex items-center mb-6">
+      <div className="mr-3">{icon}</div>
+      <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
         {title}
       </h2>
     </div>
