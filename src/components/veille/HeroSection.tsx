@@ -3,18 +3,18 @@ import { Shield } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8 animate-fadeIn">
-      <div className="max-w-7xl mx-auto">
+    <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 animate-fadeIn">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center">
           <div className="mb-8 flex justify-center">
-            <div className="w-24 h-24 rounded-full glass flex items-center justify-center">
-              <Shield className="w-12 h-12 text-white" />
+            <div className="w-20 h-20 rounded-full glass flex items-center justify-center">
+              <Shield className="w-8 h-8 text-white/80" />
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Guide de Veille Technologique : Vulnérabilités et Méthodes d'Attaque
+          <h1 className="text-4xl sm:text-5xl font-medium text-gradient mb-4 tracking-tight">
+            Veille Technologique
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             Un guide complet pour suivre et comprendre les vulnérabilités récentes et méthodes d'attaque en cybersécurité
           </p>
           <p className="text-gray-500 mt-4">

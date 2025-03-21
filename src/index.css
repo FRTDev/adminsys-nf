@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,25 +44,42 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-sans tracking-tight;
     background-image: 
-      radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.05) 2%, transparent 0%),
-      radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.025) 2%, transparent 0%);
+      radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.03) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.02) 2%, transparent 0%);
     background-size: 100px 100px;
+    letter-spacing: -0.02em;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply backdrop-blur-lg bg-white/10 border border-white/20;
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 transition-all duration-300;
   }
   
   .glass-dark {
-    @apply backdrop-blur-lg bg-black/30 border border-white/10;
+    @apply backdrop-blur-lg bg-black/20 border border-white/5 transition-all duration-300;
   }
   
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/60;
+  }
+  
+  .shimmer {
+    @apply bg-gradient-to-r from-transparent via-white/20 to-transparent bg-[length:200%_100%] animate-shine;
+  }
+  
+  .text-shimmer {
+    @apply bg-clip-text text-transparent bg-[linear-gradient(110deg,#e2e2e2,45%,#ffffff,55%,#e2e2e2)] bg-[length:250%_100%] animate-text-shimmer;
   }
 }
 
@@ -86,9 +105,16 @@
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-slideIn {
-  animation: slideIn 0.5s ease-out forwards;
+  animation: slideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
