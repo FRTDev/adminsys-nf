@@ -28,6 +28,9 @@ export const StagesHero = () => {
               Mes Stages
             </span>
           </h1>
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-fadeIn animation-delay-200">
+            Découvrez mon parcours professionnel à travers les stages que j'ai effectués durant ma formation, les compétences acquises et les projets réalisés.
+          </p>
         </div>
       </div>
     </section>
