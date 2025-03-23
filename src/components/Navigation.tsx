@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { name: "Accueil", path: "/" },
   { name: "BTS SIO", path: "/bts-sio" },
   { name: "Stages", path: "/stages" },
-  { name: "Projets", path: "/projets" },
+  { name: "Mode Projet", path: "/mode-projet" },
   { name: "Veille", path: "/veille" },
   { name: "Contact", path: "/contact" },
 ] as const;

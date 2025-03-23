@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import BtsSio from "./pages/BtsSio";
 import Stages from "./pages/Stages";
+import ModeProjet from "./pages/ModeProjet";
 import Veille from "./pages/Veille";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -23,7 +24,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Index />} />
         <Route path="/bts-sio" element={<BtsSio />} />
         <Route path="/stages" element={<Stages />} />
-        <Route path="/projets" element={<NotFound />} />
+        <Route path="/mode-projet" element={<ModeProjet />} />
         <Route path="/veille" element={<Veille />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
