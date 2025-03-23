@@ -13,10 +13,10 @@ interface NavLinkProps {
 
 export const NavLink = ({ to, children, isActive, onClick, isMobile }: NavLinkProps) => {
   const baseClasses = isMobile
-    ? "block px-3 py-2 rounded-md text-base font-medium"
-    : "px-3 py-2 rounded-md text-sm font-medium transition-colors";
+    ? "block px-3 py-2 rounded-md text-base font-medium transition-all duration-300"
+    : "px-3 py-2 rounded-md text-sm font-medium transition-all duration-300";
     
-  const activeClasses = "text-white bg-white/10";
+  const activeClasses = "text-white bg-white/10 shadow-sm";
   const inactiveClasses = "text-gray-300 hover:text-white hover:bg-white/5";
   
   return (

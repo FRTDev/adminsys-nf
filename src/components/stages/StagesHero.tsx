@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 export const StagesHero = () => {
   return (
