@@ -1,7 +1,7 @@
 
 import { Helmet } from "react-helmet";
 import Navigation from "@/components/Navigation";
-import ModeProjetHero from "@/components/projet/ModeProjetHero";
+import { ModeProjetHero } from "@/components/projet/ModeProjetHero";
 import { ModeProjetContent } from "@/components/projet/ModeProjetContent";
 import Footer from "@/components/shared/Footer";
 
