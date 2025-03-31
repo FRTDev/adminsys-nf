@@ -1,21 +1,22 @@
+
 export const certifications = [
   {
     name: "SECNUM Académie - Mooc de l'ANSSI",
     date: "Octobre 2023",
     description: "Formation en cybersécurité dispensée par l'ANSSI",
-    attestationPath: "/attestation-mooc.pdf"
+    attestationPath: "/certifications/attestation-mooc.pdf"
   },
   {
     name: "Cisco - CCNAv7 : Introduction aux réseaux",
     date: "Mai 2024",
     description: "Formation aux fondamentaux des réseaux",
-    attestationPath: "/attestation-ccna.pdf"
+    attestationPath: "/certifications/attestation-ccna.pdf"
   },
   {
     name: "Cisco - English for IT 1",
     date: "Novembre 2024",
     description: "Formation en anglais technique pour l'informatique",
-    attestationPath: "/attestation-englishforit.pdf"
+    attestationPath: "/certifications/attestation-english.pdf"
   },
   {
     name: "Cisco - Ethical Hacker",

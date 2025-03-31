@@ -1,12 +1,12 @@
 
-import { File, Link, CheckCircle2 } from "lucide-react";
+import { FileText, Link, CheckCircle2 } from "lucide-react";
 
 const ArmatisSummary = () => {
   return (
     <div>
       <div className="flex items-center mb-8">
         <div className="mr-4 p-3 rounded-full bg-white/5 border border-white/10">
-          <File className="w-7 h-7 text-white" />
+          <FileText className="w-7 h-7 text-white" />
         </div>
         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-gray-300">
           Stage chez Armatis
@@ -45,16 +45,16 @@ const ArmatisSummary = () => {
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
-            <File className="w-5 h-5" />
+            <FileText className="w-5 h-5" />
             <span>Télécharger le rapport complet</span>
           </a>
           
           <a 
-            href="/premier-annee/stage/armatis/synthèse-armatis.pdf" 
+            href="/premier-annee/stage/armatis/synthese-armatis.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
-            <File className="w-5 h-5" />
+            <FileText className="w-5 h-5" />
             <span>Télécharger la synthèse</span>
           </a>
           

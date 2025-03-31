@@ -1,29 +1,24 @@
 
 import React from "react";
+import { FileText } from "lucide-react";
 
-interface SituationCardProps {
+interface DocumentCardProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
-  link: string;
+  filePath: string;
 }
 
-export const SituationCard: React.FC<SituationCardProps> = ({
-  title,
-  description,
-  icon,
-  link
-}) => {
+const DocumentCard: React.FC<DocumentCardProps> = ({ title, description, filePath }) => {
   return (
     <a
-      href={link}
+      href={filePath}
       target="_blank"
       rel="noopener noreferrer"
       className="group block p-6 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:shadow-lg"
     >
       <div className="flex items-start gap-4">
         <div className="p-2 rounded-md bg-white/5 border border-white/10 text-white group-hover:scale-110 transition-transform duration-300">
-          {icon}
+          <FileText className="h-5 w-5" />
         </div>
         <div>
           <h3 className="text-lg font-medium text-white mb-1">{title}</h3>
@@ -33,3 +28,5 @@ export const SituationCard: React.FC<SituationCardProps> = ({
     </a>
   );
 };
+
+export default DocumentCard;

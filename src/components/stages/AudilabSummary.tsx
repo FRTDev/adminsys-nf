@@ -43,7 +43,7 @@ const AudilabSummary = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 1 _ Documentation Hyper-V + VM FOG.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission1DocumentationHyper-VVMFOG.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -52,7 +52,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 2 _ Guide d'utilisation du service FOG.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission2GuidedutilisationduserviceFOG.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -61,7 +61,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 3 _ Création d'un master.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission3Creationdunmaster.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -70,7 +70,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 4 _ Implémentation du service FOG sur l'infrastructure réelle.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission4ImplementationduserviceFOGsurlinfrastructurereelle.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -79,7 +79,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 5 _ Procédure de mise à jour FOG.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission5ProceduredemiseajourFOG.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -88,7 +88,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/Mission 7 _ Documentation d'installation de Zabbix et de surveillance des équipements.pdf" 
+            href="/deuxieme-annee/stage/audilab/Mission7DocumentationdinstallationdeZabbixetdesurveillancedesequipements.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
@@ -108,7 +108,7 @@ const AudilabSummary = () => {
           </a>
           
           <a 
-            href="/deuxieme-annee/stage/audilab/synthèse-audilab.pdf" 
+            href="/deuxieme-annee/stage/audilab/synthese-audilab.pdf" 
             target="_blank" 
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
