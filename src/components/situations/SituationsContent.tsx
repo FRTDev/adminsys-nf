@@ -212,7 +212,7 @@ const SituationsContent = () => {
               <DocumentCard 
                 title="SP0 - Mission 4"
                 description="Architecture réseau"
-                filePath="/deuxieme-annee/semestre-3-et-4/SP0/Mission4Miseenplacedunepartiedelarchitecturereseau/SP0-Mission4-Architecture-Réseau.pdf"
+                filePath="/deuxieme-annee/semestre-3-et-4/SP0/Mission4Miseenplacedunepartiedelarchitecturereseau/SP0-Mission4-Architecture-Reseau.pdf"
               />
               
               <DocumentCard 
