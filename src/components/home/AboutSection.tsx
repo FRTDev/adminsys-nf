@@ -9,11 +9,11 @@ const AboutSection = () => {
         <SectionTitle icon={<User className="w-6 h-6 text-white" />} title="À propos de moi" />
         
         <p className="text-lg text-gray-300 leading-relaxed">
-          Actuellement en deuxième année de BTS SIO avec une spécialisation en SISR 
-          (Solutions d'Infrastructure, Systèmes et Réseaux), je suis passionné par 
-          l'administration système et réseau. Mon parcours m'a permis de développer 
-          des compétences solides en gestion d'infrastructure IT et en sécurité des 
-          systèmes d'information.
+          Diplômé d'un BTS SIO spécialité SISR (Solutions d'Infrastructure, Systèmes 
+          et Réseaux), je poursuis actuellement un DEC en Techniques de l'informatique 
+          au Cégep de La Pocatière au Canada. Passionné par l'administration système 
+          et réseau, mon parcours m'a permis de développer des compétences solides en 
+          gestion d'infrastructure IT et en sécurité des systèmes d'information.
         </p>
       </div>
     </div>
