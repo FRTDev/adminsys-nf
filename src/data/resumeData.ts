@@ -28,10 +28,10 @@ export const certifications = [
 
 export const education = [
   {
-    title: "DEC en Techniques de l'informatique (Projet)",
-    institution: "Cégep La Pocatière, Québec",
+    title: "DEC en Techniques de l'informatique",
+    institution: "Cégep de La Pocatière, Canada",
     period: "2025 - 2026",
-    description: "Projet d'études au Québec pour approfondir mes connaissances en informatique. Formation intensive axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international.",
+    description: "Formation au Cégep de La Pocatière au Canada, axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international.",
     link: "https://www.cegeplapocatiere.qc.ca/programmes/techniques/techniques-de-linformatique"
   },
   {
