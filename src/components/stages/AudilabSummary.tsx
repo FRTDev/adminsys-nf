@@ -44,7 +44,7 @@ const AudilabSummary = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           <a 
             href="/deuxieme-annee/stage/audilab/Mission1DocumentationHyper-VVMFOG.pdf" 
-            target="_blank" 
+            target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
             <File className="w-5 h-5" />
