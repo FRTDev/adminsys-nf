@@ -48,7 +48,7 @@ const SituationsContent = () => {
               <div className="mt-6 flex justify-center">
                 <a 
                   href="/premier-annee/semestre-2/contexte-deuxieme-semestre/contexte-barec-automatisme.pdf" 
-                  target="_blank" 
+                  target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
                 >
                   <FileText className="w-4 h-4" />
