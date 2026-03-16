@@ -1,7 +1,9 @@
-import { cn } from "@/lib/utils";
+import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-export { cn };
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export function truncateText(text: string, maxLength: number): string {
   if (text.length <= maxLength) return text;
