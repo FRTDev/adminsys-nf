@@ -42,7 +42,7 @@ const ArmatisSummary = () => {
         <div className="flex flex-col md:flex-row gap-4 mt-8">
           <a 
             href="/premier-annee/stage/armatis/rapport-armatis.pdf" 
-            target="_blank" 
+            target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
           >
             <FileText className="w-5 h-5" />
