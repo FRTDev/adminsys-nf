@@ -77,7 +77,7 @@ export const ModeProjetContent = () => {
               <div className="mt-8 flex justify-center">
                 <a 
                   href="/gestion-projet/Methodes-de-Gestion-de-Projet-Informatique.pdf" 
-                  target="_blank" 
+                  target="_blank" rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg transition-colors"
                 >
                   <BookOpen className="w-4 h-4" />
