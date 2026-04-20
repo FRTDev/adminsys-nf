@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,21 +6,20 @@ export const NotFoundContent = () => {
   return (
     <div className="text-center">
       <div className="flex justify-center mb-6">
-        <div className="w-20 h-20 rounded-full glass flex items-center justify-center bg-white/5 border border-white/10">
-          <AlertCircle className="w-10 h-10 text-white" />
+        <div className="relative">
+          <div className="absolute inset-0 rounded-full bg-brand/20 blur-xl animate-glow-pulse" />
+          <div className="relative w-20 h-20 rounded-full glass-strong flex items-center justify-center">
+            <AlertCircle className="w-10 h-10 text-foreground" />
+          </div>
         </div>
       </div>
-      
-      <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-gray-300">
-        404
-      </h1>
-      
-      <p className="text-xl text-gray-400 mb-8">
-        Cette page n'existe pas
-      </p>
-      
+
+      <h1 className="text-5xl font-bold mb-4 text-shimmer">404</h1>
+
+      <p className="text-lg text-muted-foreground mb-8">Cette page n'existe pas</p>
+
       <Link to="/">
-        <Button variant="outline" className="border-white/20 hover:bg-white/10">
+        <Button variant="outline" className="btn-shine border-white/20 hover:bg-white/10 hover:border-brand/40">
           Retour à l'accueil
         </Button>
       </Link>
