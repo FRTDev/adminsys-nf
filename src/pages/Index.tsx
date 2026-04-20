@@ -1,47 +1,43 @@
-
-import Navigation from "@/components/Navigation";
+import PageLayout from "@/components/shared/PageLayout";
 import HeroSection from "@/components/home/HeroSection";
 import AboutSection from "@/components/home/AboutSection";
 import SkillsSection from "@/components/home/SkillsSection";
 import CertificationsSection from "@/components/home/CertificationsSection";
 import TimelineSection from "@/components/home/TimelineSection";
-import Footer from "@/components/shared/Footer";
+import { Reveal } from "@/components/shared/Reveal";
 import { certifications, education, professionalExperience } from "@/data/resumeData";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background bg-gradient-to-br from-background to-background/70">
-      <Navigation />
-      
-      {/* Main Content */}
-      <div className="container mx-auto px-4 pt-20 pb-10">
-        {/* Hero and About Section */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-16">
+    <PageLayout>
+      <div className="container mx-auto px-4 pt-24 pb-10 max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-6 mb-16">
           <HeroSection />
           <AboutSection />
         </div>
 
-        {/* Skills Section */}
-        <div className="mb-16 animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
-          <SkillsSection />
-        </div>
+        <Reveal>
+          <div className="mb-16 glass p-6 sm:p-8 rounded-2xl">
+            <SkillsSection />
+          </div>
+        </Reveal>
 
-        {/* Certifications Section */}
-        <div className="mb-16 animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
-          <CertificationsSection certifications={certifications} />
-        </div>
+        <Reveal>
+          <div className="mb-16 glass p-6 sm:p-8 rounded-2xl">
+            <CertificationsSection certifications={certifications} />
+          </div>
+        </Reveal>
 
-        {/* Education & Experience Section */}
-        <div className="animate-fadeIn glass p-8 rounded-lg border border-white/10 shadow-lg">
-          <TimelineSection 
-            education={education} 
-            professionalExperience={professionalExperience} 
-          />
-        </div>
+        <Reveal>
+          <div className="glass p-6 sm:p-8 rounded-2xl">
+            <TimelineSection
+              education={education}
+              professionalExperience={professionalExperience}
+            />
+          </div>
+        </Reveal>
       </div>
-
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

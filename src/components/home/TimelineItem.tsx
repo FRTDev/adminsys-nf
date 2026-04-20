@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Reveal } from "@/components/shared/Reveal";
 
 interface TimelineItemProps {
   icon: React.ReactNode;
@@ -11,48 +11,30 @@ interface TimelineItemProps {
 }
 
 export const TimelineItem = ({ icon, title, subtitle, description, delay, link }: TimelineItemProps) => {
-  const CardContent = () => (
-    <>
-      <h4 className="text-xl font-semibold text-white flex items-center gap-2">
+  const Inner = (
+    <div className="glass p-6 rounded-2xl card-interactive hover-lift transition-all duration-500">
+      <h4 className="text-lg sm:text-xl font-semibold text-foreground flex items-center gap-2 tracking-tight">
         {icon}
         {title}
       </h4>
-      <p className="text-sm text-gray-400 italic">{subtitle}</p>
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-3"></div>
-      <p className="text-base text-gray-300">{description}</p>
-    </>
+      <p className="text-sm text-muted-foreground italic mt-1">{subtitle}</p>
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-white/15 to-transparent my-3" />
+      <p className="text-base text-muted-foreground leading-relaxed">{description}</p>
+    </div>
   );
 
-  if (link) {
-    return (
-      <div 
-        className="relative ml-16 animate-fadeIn" 
-        style={{ animationDelay: `${delay}ms` }}
-      >
-        <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40 z-10 shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
-        <a 
-          href={link} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="block"
-        >
-          <div className="glass p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-white/15 border border-white/10 cursor-pointer">
-            <CardContent />
-          </div>
-        </a>
-      </div>
-    );
-  }
-
   return (
-    <div 
-      className="relative ml-16 animate-fadeIn" 
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      <div className="absolute -left-20 top-3 w-4 h-4 rounded-full bg-white/20 border-2 border-white/40 z-10 shadow-[0_0_10px_rgba(255,255,255,0.3)]" />
-      <div className="glass p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-white/15 border border-white/10">
-        <CardContent />
+    <Reveal delay={delay}>
+      <div className="relative ml-16">
+        <div className="absolute -left-[4.4rem] top-4 w-4 h-4 rounded-full bg-brand/30 border-2 border-brand/60 z-10 shadow-[0_0_15px_hsl(var(--glow)/0.5)]" />
+        {link ? (
+          <a href={link} target="_blank" rel="noopener noreferrer" className="block">
+            {Inner}
+          </a>
+        ) : (
+          Inner
+        )}
       </div>
-    </div>
+    </Reveal>
   );
 };

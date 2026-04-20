@@ -1,19 +1,18 @@
-
 import { Mail } from "lucide-react";
 
 export const ContactInfo = () => {
   return (
-    <div className="mt-8 text-center">
-      <p className="text-base text-gray-400">
+    <div className="text-center">
+      <p className="text-base text-muted-foreground">
         Vous pouvez également me contacter directement par email à{" "}
-        <a
-          href="mailto:n.froment37@gmail.com"
-          className="text-white hover:text-primary transition-colors flex items-center justify-center gap-2 mt-2 text-lg font-medium"
-        >
-          <Mail className="w-5 h-5" />
-          n.froment37@gmail.com
-        </a>
       </p>
+      <a
+        href="mailto:n.froment37@gmail.com"
+        className="inline-flex items-center justify-center gap-2 mt-3 text-base font-medium text-foreground hover:text-brand transition-colors group"
+      >
+        <Mail className="w-4 h-4 transition-transform group-hover:scale-110" />
+        n.froment37@gmail.com
+      </a>
     </div>
   );
 };
