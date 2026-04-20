@@ -1,5 +1,5 @@
-
 import React from "react";
+import { cn } from "@/lib/utils";
 
 interface SectionTitleProps {
   icon: React.ReactNode;
@@ -7,11 +7,16 @@ interface SectionTitleProps {
   className?: string;
 }
 
-export const SectionTitle = ({ icon, title, className = "" }: SectionTitleProps) => {
+export const SectionTitle = ({ icon, title, className }: SectionTitleProps) => {
   return (
-    <div className={`flex items-center mb-6 ${className}`}>
-      <div className="mr-3 p-3 rounded-full bg-white/5 border border-white/10">{icon}</div>
-      <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+    <div className={cn("flex items-center mb-8", className)}>
+      <div className="relative mr-4">
+        <div className="absolute inset-0 rounded-xl bg-brand/20 blur-md opacity-60" />
+        <div className="relative p-3 rounded-xl glass-strong border border-white/10">
+          {icon}
+        </div>
+      </div>
+      <h2 className="text-2xl sm:text-3xl font-bold gradient-text tracking-tight">
         {title}
       </h2>
     </div>
