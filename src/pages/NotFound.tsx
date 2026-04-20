@@ -1,23 +1,15 @@
-import { useEffect } from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/shared/Footer";
+import PageLayout from "@/components/shared/PageLayout";
 import { NotFoundContent } from "@/components/error/NotFoundContent";
 
 const NotFound = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-background">
-      <Navigation />
-      <div className="flex-grow flex items-center justify-center py-20">
-        <div className="glass p-12 rounded-lg border border-white/10 shadow-lg max-w-md w-full">
+    <PageLayout>
+      <div className="flex-grow flex items-center justify-center py-32 px-4">
+        <div className="glass-strong p-12 rounded-2xl max-w-md w-full animate-fade-in-scale">
           <NotFoundContent />
         </div>
       </div>
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 
