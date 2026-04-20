@@ -1,6 +1,4 @@
-
 import React from "react";
-import { LucideIcon } from "lucide-react";
 
 interface SkillSectionProps {
   title: string;
@@ -11,21 +9,21 @@ interface SkillSectionProps {
 
 export const SkillSection = ({ title, icon, skills, delay }: SkillSectionProps) => {
   return (
-    <div 
-      className="glass p-5 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-white/15 border border-white/10"
+    <div
+      className="glass p-5 rounded-xl card-interactive hover-lift transition-all duration-500"
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex items-center mb-3">
-        {icon}
-        <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <div className="flex items-center mb-4">
+        <span className="mr-2 text-foreground">{icon}</span>
+        <h3 className="text-lg font-semibold text-foreground tracking-tight">{title}</h3>
       </div>
-      
+
       <div className="flex flex-wrap gap-2">
-        {skills.map((skill, skillIndex) => (
-          <span 
-            key={skill} 
-            className="px-3 py-1.5 bg-white/10 rounded-full text-sm text-gray-300 hover:bg-white/20 transition-colors duration-300 border border-white/5"
-            style={{ animationDelay: `${delay + (skillIndex * 50)}ms` }}
+        {skills.map((skill, i) => (
+          <span
+            key={skill}
+            className="px-3 py-1.5 bg-white/[0.06] rounded-full text-sm text-muted-foreground border border-white/[0.08] hover:bg-white/10 hover:text-foreground hover:border-brand/40 transition-all duration-300"
+            style={{ animationDelay: `${delay + i * 40}ms` }}
           >
             {skill}
           </span>

@@ -1,7 +1,7 @@
-
 import { Code, Network, Server, Monitor, Wrench, Box, Terminal } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { SkillSection } from "./SkillSection";
+import { Reveal } from "@/components/shared/Reveal";
 
 const skillsData = {
   development: ["C#", "PHP", "HTML", "CSS", "Python", "SQL"],
@@ -16,34 +16,29 @@ const skillsData = {
 };
 
 const skillCategoryMap = {
-  development: { title: "Développement", icon: <Code className="w-5 h-5 text-white mr-2" /> },
-  network: { title: "Réseau", icon: <Network className="w-5 h-5 text-white mr-2" /> },
-  services: { title: "Services", icon: <Server className="w-5 h-5 text-white mr-2" /> },
-  os: { title: "Systèmes d'exploitation", icon: <Monitor className="w-5 h-5 text-white mr-2" /> },
-  software: { title: "Logiciels", icon: <Wrench className="w-5 h-5 text-white mr-2" /> },
-  virtualization: { title: "Virtualisation", icon: <Box className="w-5 h-5 text-white mr-2" /> },
-  deployment: { title: "Déploiement de postes", icon: <Box className="w-5 h-5 text-white mr-2" /> },
-  scripting: { title: "Scripting", icon: <Terminal className="w-5 h-5 text-white mr-2" /> },
-  management: { title: "Gestion de parc et incidents", icon: <Wrench className="w-5 h-5 text-white mr-2" /> },
+  development: { title: "Développement", icon: <Code className="w-5 h-5" /> },
+  network: { title: "Réseau", icon: <Network className="w-5 h-5" /> },
+  services: { title: "Services", icon: <Server className="w-5 h-5" /> },
+  os: { title: "Systèmes d'exploitation", icon: <Monitor className="w-5 h-5" /> },
+  software: { title: "Logiciels", icon: <Wrench className="w-5 h-5" /> },
+  virtualization: { title: "Virtualisation", icon: <Box className="w-5 h-5" /> },
+  deployment: { title: "Déploiement de postes", icon: <Box className="w-5 h-5" /> },
+  scripting: { title: "Scripting", icon: <Terminal className="w-5 h-5" /> },
+  management: { title: "Gestion de parc et incidents", icon: <Wrench className="w-5 h-5" /> },
 };
 
 const SkillsSection = () => {
   return (
-    <div className="glass p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/10">
-      <SectionTitle icon={<Code className="w-6 h-6 text-white" />} title="Compétences" />
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div>
+      <SectionTitle icon={<Code className="w-6 h-6 text-foreground" />} title="Compétences" />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.entries(skillsData).map(([category, skills], index) => {
           const { title, icon } = skillCategoryMap[category as keyof typeof skillCategoryMap];
-          
           return (
-            <SkillSection
-              key={category}
-              title={title}
-              icon={icon}
-              skills={skills}
-              delay={index * 100}
-            />
+            <Reveal key={category} delay={index * 60}>
+              <SkillSection title={title} icon={icon} skills={skills} delay={index * 60} />
+            </Reveal>
           );
         })}
       </div>
