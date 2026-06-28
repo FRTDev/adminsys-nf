@@ -20,16 +20,17 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-display font-bold text-shimmer mb-4 break-words">
-          Noah F.
+          Noah Froment
         </h1>
 
         <p className="text-base sm:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-          Étudiant en DEC Technique de l'informatique
+          Étudiant B3 Cybersécurité — Spécialisation Infra & Réseaux Sécurisés<br />
+          <span className="text-sm sm:text-base">Recherche alternance 2026-2027 · Cisco CCNA · École 2600</span>
         </p>
 
         <div className="flex justify-center gap-3">
           <SocialLink
-            href="https://www.linkedin.com/in/noah-f-b3a500265/"
+            href="https://www.linkedin.com/in/noah-froment-cyber/"
             icon={<Linkedin className="w-5 h-5" />}
             label="LinkedIn"
             isExternal
