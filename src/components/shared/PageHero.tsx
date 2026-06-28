@@ -10,11 +10,11 @@ interface PageHeroProps {
 
 export const PageHero = ({ icon, title, subtitle, className }: PageHeroProps) => {
   return (
-    <section className={cn("relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden", className)}>
+    <section className={cn("relative pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden", className)}>
       {/* Ambient orbs */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-brand/10 blur-3xl animate-aurora opacity-60" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full bg-brand/5 blur-3xl animate-pulse opacity-40" />
+      <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[min(600px,90vw)] h-[300px] sm:h-[400px] rounded-full bg-brand/10 blur-3xl animate-aurora opacity-60" />
+        <div className="absolute bottom-0 right-0 sm:right-1/4 w-[min(400px,80vw)] h-[200px] sm:h-[300px] rounded-full bg-brand/5 blur-3xl animate-pulse opacity-40" />
       </div>
 
       <div className="max-w-5xl mx-auto text-center">

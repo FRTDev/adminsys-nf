@@ -56,10 +56,17 @@
     font-family: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    -webkit-tap-highlight-color: transparent;
     background-color: hsl(var(--background));
     background-image:
       radial-gradient(ellipse 80% 60% at 50% -10%, hsl(var(--glow) / 0.10), transparent 60%),

@@ -10,26 +10,26 @@ import { certifications, education, professionalExperience } from "@/data/resume
 const Index = () => {
   return (
     <PageLayout>
-      <div className="container mx-auto px-4 pt-24 pb-10 max-w-7xl">
-        <div className="flex flex-col lg:flex-row gap-6 mb-16">
+      <div className="container mx-auto px-4 sm:px-6 pt-20 sm:pt-24 pb-10 max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-6 mb-10 sm:mb-16">
           <HeroSection />
           <AboutSection />
         </div>
 
         <Reveal>
-          <div className="mb-16 glass p-6 sm:p-8 rounded-2xl">
+          <div className="mb-10 sm:mb-16 glass p-4 sm:p-8 rounded-2xl">
             <SkillsSection />
           </div>
         </Reveal>
 
         <Reveal>
-          <div className="mb-16 glass p-6 sm:p-8 rounded-2xl">
+          <div className="mb-10 sm:mb-16 glass p-4 sm:p-8 rounded-2xl">
             <CertificationsSection certifications={certifications} />
           </div>
         </Reveal>
 
         <Reveal>
-          <div className="glass p-6 sm:p-8 rounded-2xl">
+          <div className="glass p-4 sm:p-8 rounded-2xl">
             <TimelineSection
               education={education}
               professionalExperience={professionalExperience}
