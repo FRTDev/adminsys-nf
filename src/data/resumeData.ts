@@ -1,6 +1,18 @@
 
 export const certifications = [
   {
+    name: "Cisco - Cybersecurity Essentials",
+    date: "Décembre 2025",
+    description: "Fondamentaux de la cybersécurité : menaces, cryptographie, défense et bonnes pratiques de sécurisation.",
+    attestationPath: null
+  },
+  {
+    name: "Hack'n'Flag — CTF (3ᵉ place)",
+    date: "Mars 2024",
+    description: "Troisième place au Capture The Flag organisé au Campus Skolae Tours (test d'intrusion, hacking éthique).",
+    attestationPath: null
+  },
+  {
     name: "SECNUM Académie - Mooc de l'ANSSI",
     date: "Octobre 2023",
     description: "Formation en cybersécurité dispensée par l'ANSSI",
@@ -28,16 +40,23 @@ export const certifications = [
 
 export const education = [
   {
+    title: "Bachelor 3 Cybersécurité — Spécialisation Infra & Réseaux Sécurisés",
+    institution: "École 2600, France",
+    period: "2026 - 2027 (en recherche d'alternance)",
+    description: "Bachelor orienté Red Team avec une forte appétence pour l'OSINT, le Forensic et les CTF. Recherche d'une alternance d'un an pour mettre en pratique mes compétences en cybersécurité offensive et défensive.",
+    link: "https://ecole2600.com/"
+  },
+  {
     title: "DEC en Techniques de l'informatique",
     institution: "Cégep de La Pocatière, Canada",
-    period: "2025 - 2026",
+    period: "Août 2025 - Juin 2026",
     description: "Formation au Cégep de La Pocatière au Canada, axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international.",
     link: "https://www.cegeplapocatiere.qc.ca/programmes/techniques/techniques-de-linformatique"
   },
   {
     title: "BTS SIO SISR",
     institution: "Lycée Paul-Louis Courier, France",
-    period: "2023 - 2025",
+    period: "Septembre 2023 - Juillet 2025",
     description: "Formation spécialisée en administration des systèmes et réseaux. Acquisition de compétences en gestion d'infrastructure, sécurisation des réseaux, virtualisation et mise en place de solutions d'hébergement.",
     link: "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux"
   },

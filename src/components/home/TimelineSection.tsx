@@ -71,7 +71,7 @@ const TimelineSection = ({ education, professionalExperience }: TimelineSectionP
         <p className="text-base text-muted-foreground mt-10 text-center relative z-10">
           Pour voir tous mes jobs étudiants, consultez mon profil{" "}
           <a
-            href="https://www.linkedin.com/in/noah-f-b3a500265/"
+            href="https://www.linkedin.com/in/noah-froment-cyber/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground hover:text-brand underline-offset-4 hover:underline transition-colors duration-300"
