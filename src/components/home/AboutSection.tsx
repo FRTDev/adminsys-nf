@@ -9,15 +9,15 @@ const AboutSection = () => {
 
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
           Après un BTS SIO SISR et un DEC en Techniques de l'informatique au Canada,
-          je poursuis mon parcours en <span className="text-foreground font-medium">Bachelor 3 Cybersécurité à l'École 2600</span>,
-          orienté Red Team avec une forte appétence pour l'<span className="text-foreground font-medium">OSINT, le Forensic et les CTF</span>.
+          je suis actuellement en <span className="text-foreground font-medium">recherche d'une alternance B3 Cybersécurité à l'École 2600</span>,
+          avec un accès <span className="text-foreground font-medium">Purple Team</span> et une forte appétence pour l'<span className="text-foreground font-medium">OSINT, le pentest et la sécurisation d'environnement</span>.
           Je m'intéresse particulièrement à la sécurisation des systèmes et des réseaux,
           à l'administration des infrastructures IT et aux bonnes pratiques de hardening.
         </p>
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mt-4">
-          Curieux, rigoureux et motivé, je suis actuellement{" "}
-          <span className="text-foreground font-medium">en recherche d'une alternance d'un an en cybersécurité</span>{" "}
-          (Tours ou Île-de-France) pour la rentrée 2026-2027.
+          Curieux, rigoureux et motivé, j'aime apprendre en continu, expérimenter de nouvelles technologies
+          et comprendre le fonctionnement des systèmes afin de mieux les sécuriser.
+          Je suis ouvert aux opportunités d'<span className="text-foreground font-medium">alternance ou de collaboration en cybersécurité</span>.
         </p>
       </div>
     </div>

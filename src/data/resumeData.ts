@@ -43,14 +43,14 @@ export const education = [
     title: "Bachelor 3 Cybersécurité — Spécialisation Infra & Réseaux Sécurisés",
     institution: "École 2600, France",
     period: "2026 - 2027 (en recherche d'alternance)",
-    description: "Bachelor orienté Red Team avec une forte appétence pour l'OSINT, le Forensic et les CTF. Recherche d'une alternance d'un an pour mettre en pratique mes compétences en cybersécurité offensive et défensive.",
+    description: "Bachelor avec un accès Purple Team, orienté OSINT, pentest et sécurisation d'environnement. Recherche d'une alternance d'un an pour mettre en pratique mes compétences en cybersécurité offensive et défensive.",
     link: "https://ecole2600.com/"
   },
   {
     title: "DEC en Techniques de l'informatique",
     institution: "Cégep de La Pocatière, Canada",
     period: "Août 2025 - Juin 2026",
-    description: "Formation au Cégep de La Pocatière au Canada, axée sur les nouvelles technologies, l'administration système et la sécurité informatique. Une opportunité d'enrichir mon parcours dans un contexte international.",
+    description: "Formation au Cégep de La Pocatière au Canada, axée sur les nouvelles technologies, l'administration système et la sécurité informatique. DEC terminé avec succès en juin 2026.",
     link: "https://www.cegeplapocatiere.qc.ca/programmes/techniques/techniques-de-linformatique"
   },
   {
