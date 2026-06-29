@@ -24,8 +24,8 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-base sm:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-          Étudiant B3 Cybersécurité — Spécialisation Infra & Réseaux Sécurisés<br />
-          <span className="text-sm sm:text-base">Recherche alternance 2026-2027 · Cisco CCNA · École 2600</span>
+          Recherche alternance B3 Cybersécurité à École 2600 (2026-2027)<br />
+          <span className="text-sm sm:text-base">Purple Team · OSINT · Pentest · Sécurisation d'environnement</span>
         </p>
 
         <div className="flex justify-center gap-3">

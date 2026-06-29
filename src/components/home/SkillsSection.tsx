@@ -8,11 +8,11 @@ const skillsData = {
   network: ["Adressage", "Configuration d'interconnexion", "Sécurisation des équipements", "VLAN", "Protocoles de routage"],
   services: ["DNS", "DHCP", "FTP", "Apache", "PHP", "MariaDB", "SSH", "AD", "LDAP"],
   os: ["Windows 10/11", "Linux Debian/Kali Linux", "Windows Server 2019/2022"],
-  software: ["Packet Tracer", "Wireshark", "Nmap", "Metasploit"],
+  software: ["Packet Tracer", "Wireshark", "Nmap", "Metasploit", "Wazuh"],
   virtualization: ["Nutanix", "VirtualBox", "Hyper-V", "Docker", "VMware"],
   deployment: ["FOG", "Sysprep", "Windows ADK"],
   scripting: ["Batch", "Bash", "PowerShell", "Python"],
-  management: ["GLPI", "Zabbix", "Centreon"],
+  management: ["GLPI", "Zabbix", "Centreon", "Zendesk"],
 };
 
 const skillCategoryMap = {
